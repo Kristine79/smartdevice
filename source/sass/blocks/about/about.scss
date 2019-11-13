@@ -1,0 +1,59 @@
+.about {
+ display: flex;
+ flex-direction: column;
+ max-width: 1500px;
+ min-width: 1000px;
+ margin-left: auto;
+ margin-right: auto;
+position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+      top: 5px;
+    left: 0;
+    width: 220px;
+    height: 317px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-image: url("../img/about2005.png");
+  }
+}
+
+.about__header {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about__text {
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  width: 867px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.about__btn {
+color: $blue;
+font-weight: bold;
+border: 1px solid $blue;
+padding-left: 40px;
+padding-right: 40px;
+display: inline-block;
+width: 180px;
+margin-top: 30px;
+}
+
+.about__wrapper {
+  margin-left: 210px;
+  width: 80%;
+  color: $light-gray;
+  z-index: 1;
+}
