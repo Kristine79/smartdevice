@@ -1,0 +1,97 @@
+.advantages {
+ min-width: 1000px;
+ margin: 0 auto;
+ max-width: 1500px;
+ position: relative;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.advantages-item  {
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  width: 570px;
+  margin-bottom: 30px;
+  color: $light-gray;
+  position: relative;
+  border: 1px solid $gray-border;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: $blue;
+  }
+}
+
+.advantages-item__link {
+  display: block;
+  text-decoration: none;
+  padding-left: 43px;
+  padding-right: 42px;
+  padding-top: 40px;
+  padding-bottom: 44px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.advantages-item__link:hover {
+  background-color: $blue;
+
+  svg {
+    fill: $white;
+  }
+
+  h3 {
+    color: $white;
+  }
+
+  p {
+    color: $white;
+  }
+}
+
+.advantages-item__link svg {
+  margin-bottom: 16px;
+  fill: $blue;
+}
+
+.advantages__header {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.advantages__text {
+  width: 482px;
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-right: 0;
+}
+
+.advantages-bg {
+  background: url("../img/leftrectangle-small.png") 7% 1% no-repeat,
+  url("../img/rightrectangle-small.png") center center no-repeat,
+  url("../img/leftrectangle-big.png") -10% 100% no-repeat,
+  url("../img/rightrectangle-small.png") 85% center no-repeat;
+  background-size: auto, auto, auto, auto;
+}
+
