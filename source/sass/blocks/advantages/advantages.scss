@@ -2,6 +2,7 @@
  margin: 0 auto;
  position: relative;
  width: 1170px;
+ margin-bottom: 110px;
 }
 
 .advantages-list {
@@ -23,7 +24,6 @@
   position: relative;
   border: 1px solid $gray-border;
 
-
   &::before {
     position: absolute;
     content: "";
@@ -41,11 +41,10 @@
   padding-left: 43px;
   padding-right: 42px;
   padding-top: 40px;
-  padding-bottom: 44px;
+  padding-bottom: 64px;
   width: 100%;
   height: 100%;
 }
-
 
 .advantages-item__link:hover {
   background-color: $blue;
@@ -95,4 +94,3 @@
   background-size: auto, auto, auto, auto;
   padding-bottom: 110px;
 }
-
