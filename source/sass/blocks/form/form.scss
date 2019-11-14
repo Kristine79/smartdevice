@@ -1,0 +1,14 @@
+.form-bg{
+background: url("../img/plane.png") center top no-repeat,
+   url("../img/two_reactangles.png") center top no-repeat;
+  background-size: cover, auto;
+  background-color: $darkbg;
+  background-color: $blue;
+}
+
+.form {
+  width: 1024px;
+  margin: 0 auto;
+padding-top: 96px;
+}
+

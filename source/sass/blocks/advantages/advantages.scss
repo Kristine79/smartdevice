@@ -23,6 +23,7 @@
   color: $light-gray;
   position: relative;
   border: 1px solid $gray-border;
+  background-color: #FFFFFF;
 
   &::before {
     position: absolute;
@@ -86,11 +87,4 @@
   margin-right: 0;
 }
 
-.advantages-about-bg {
-  background: url("../img/leftrectangle-small.png") 7% 1% no-repeat,
-  url("../img/rightrectangle-small.png") center center no-repeat,
-  url("../img/leftrectangle-big.png") -10% 100% no-repeat,
-  url("../img/rightrectangle-small.png") 85% center no-repeat;
-  background-size: auto, auto, auto, auto;
-  padding-bottom: 110px;
-}
+
