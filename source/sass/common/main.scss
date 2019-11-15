@@ -15,11 +15,13 @@ img {
 
 a {
   text-decoration: none;
+  color: #1B2D37;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -34,3 +36,4 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
