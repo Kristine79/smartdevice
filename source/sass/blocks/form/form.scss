@@ -1,14 +1,136 @@
-.form-bg{
-background: url("../img/plane.png") center top no-repeat,
-   url("../img/two_reactangles.png") center top no-repeat;
-  background-size: cover, auto;
-  background-color: $darkbg;
+.form-bg {
   background-color: $blue;
+  padding-bottom: 171px;
+  background: url("../img/tworectanglesform.png") 18% 86% no-repeat;
+  background-size: auto, auto, auto, auto;
+  background-color: $blue;
+  margin-bottom: 65px;
 }
 
 .form {
-  width: 1024px;
   margin: 0 auto;
-padding-top: 96px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 91px;
+  width: 1400px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 161px;
+    left: 0;
+    width: 511px;
+    height: 288px;
+    background-image: url("../img/plane.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
 }
+
+
+.form-container {
+ display: flex;
+ flex-wrap: wrap;
+ color: $white;
+ margin-left: auto;
+ margin-right: 27px;
+ margin-bottom: 75px;
+ width: 700px;
+ z-index: 1;
+}
+
+.form__header {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.form-contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:570px;
+}
+
+.form-contact p {
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form-contact input {
+  font-family: $font-mono;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  color: $white;
+  background-color: $light-blue;
+  margin-bottom: 40px;
+  padding-left: 16px;
+  width: 270px;
+  height: 52px;
+  border-radius: 0;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+  .form-contact textarea {
+    font-family: $font-mono;
+    border: none;
+    resize: none;
+    color: $white;
+    background-color: $light-blue;
+    margin-bottom: 43px;
+    padding-left: 16px;
+    padding-top: 13px;
+    width: 100%;
+    height: 154px;
+    border-radius: 0;
+    &::placeholder {
+      color: $white;
+    }
+
+    .form__submit{
+      width: 270px;
+    }
+
+    .form-contact input[id="data"] {
+      right: 253px;
+      bottom: 30px;
+    }
+
+    .form-contact label[for="data"] {
+      font-family: $font-mono;
+      position: relative;
+      font-size: 14px;
+      line-height: 16px;
+      padding-left: 32px;
+      padding-top: 8px;
+      width: 262px;
+      order: 1;
+      opacity: 0.8;
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 8px;
+        width: 16px;
+        height: 16px;
+        border: 1px solid $white;
+        background: none;
+      }
+    }
+}
+
 
