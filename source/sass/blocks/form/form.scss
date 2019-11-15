@@ -1,7 +1,9 @@
 .form-bg {
   background-color: $blue;
-  padding-bottom: 171px;
-  background: url("../img/tworectanglesform.png") 18% 86% no-repeat;
+  padding-bottom: 100px;
+  background: url("../img/tworectanglesform.png") 6% 26% no-repeat,
+    url("../img/leftrectangleform-small.png") 95% 17% no-repeat,
+    url("../img/rightrectangleform-big.png") right 60% no-repeat;
   background-size: auto, auto, auto, auto;
   background-color: $blue;
   margin-bottom: 65px;
@@ -30,16 +32,15 @@
   }
 }
 
-
 .form-container {
- display: flex;
- flex-wrap: wrap;
- color: $white;
- margin-left: auto;
- margin-right: 27px;
- margin-bottom: 75px;
- width: 700px;
- z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  color: $white;
+  margin-left: auto;
+  margin-right: 27px;
+  margin-bottom: 90px;
+  width: 700px;
+  z-index: 1;
 }
 
 .form__header {
@@ -48,21 +49,23 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
+  margin: 0;
 }
 
-.form-contact{
+.form-contact {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width:570px;
+  width: 570px;
 }
 
-.form-contact p {
+.form-container p {
   font-family: $font-mono;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  margin-bottom: 49px;
 }
 
 .form-contact input {
@@ -95,42 +98,45 @@
     width: 100%;
     height: 154px;
     border-radius: 0;
+
     &::placeholder {
       color: $white;
     }
+  }
 
-    .form__submit{
-      width: 270px;
+  .form__submit{
+    width: 270px;
+  }
+
+  .form-contact input[id="data"] {
+    right: 253px;
+    bottom: 30px;
+  }
+
+  .form-contact label[for="data"] {
+    font-family: $font-mono;
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 32px;
+    padding-top: 8px;
+    width: 262px;
+    order: 1;
+    opacity: 0.8;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 8px;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $white;
+      background: none;
     }
+  }
 
-    .form-contact input[id="data"] {
-      right: 253px;
-      bottom: 30px;
-    }
-
-    .form-contact label[for="data"] {
-      font-family: $font-mono;
-      position: relative;
-      font-size: 14px;
-      line-height: 16px;
-      padding-left: 32px;
-      padding-top: 8px;
-      width: 262px;
-      order: 1;
-      opacity: 0.8;
-      cursor: pointer;
-
-      &::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 8px;
-        width: 16px;
-        height: 16px;
-        border: 1px solid $white;
-        background: none;
-      }
-    }
-}
-
-
+  .contact-form input[id="data"]:checked + label[for="data"]::before {
+    background: url("../img/check.png") center center no-repeat;
+  }
