@@ -1,4 +1,4 @@
-.popup {
+.popup-form {
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -7,6 +7,7 @@
   padding-top: 33px;
   width: 490px;
   background-color: $blue;
+display:none;
 }
 
 .popup-container {
@@ -118,3 +119,76 @@
   .contact-popup input[id="data"]:checked + label[for="data"]::before {
     background: url("../img/check.png") center center no-repeat;
   }
+
+
+/*Стили для js*/
+
+.popup-show {
+  display: block;
+  animation: bounce .6s;
+}
+
+
+.popup-error {
+  animation: shake .6s;
+}
+
+.popup-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.popup-close::before,
+.popup-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 21px;
+  height: 3px;
+  background-color: #fecccd;
+}
+
+.popup-close::before {
+  transform: rotate(45deg);
+}
+
+.popup-close::after {
+  transform: rotate(-45deg);
+}
+
+.popup-close:hover::after {
+ background-color: #fc565a;
+}
+
+.popup-close:hover::before {
+ background-color: #fc565a;
+}
+
+.popup-close:active::after {
+ background-color: #ffeeee;
+}
+
+.popup-close:active::before {
+ background-color: #ffeeee;
+}
+
+
+.error {
+  border: 2px solid #e74246;
+}
+
+
+
+.error.name::placeholder,
+.error.message::placeholder {
+  color: #e74246;
+}
+

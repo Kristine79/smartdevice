@@ -21,7 +21,8 @@
     <include src="build/img/sprite_auto.svg"></include>
   </div>
 
-  <div class="mainscreen-bg">
+
+<div class="mainscreen-bg">
     <header class="header">
       <div class="header__logo ">
         <div class="header__img">
@@ -50,10 +51,9 @@
         <a class="header__phone" href="tel:+7(495)0005252" aria-label="Телефон">
           +7 (495) 000 52 52
         </a>
-        <a class="header__button button" href="#">Заказать звонок</a>
+        <a class="header__button button popup__writeus" href="#">Заказать звонок</a>
       </div>
     </header>
-
     <section class="promo">
       <div class="promo__text">
         <h2 class="promo__header">Печатные платы</h2>
@@ -282,31 +282,32 @@
           </section>
         </footer>
 
-        <!--<div class="popup visually-hidden">-->
-          <section class="popup">
+        <div class="popup visually-hidden">
+          <section class="popup-form contact-form">
             <div class="popup-container">
               <h2 class="popup__header">Закажите звонок</h2>
               <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
               <form class="popup-contact">
                 <label for="name" class="visually-hidden">Введите свое имя</label>
-                <input name="name" id="name" type="text" placeholder="Имя" required>
+                <input class="name" name="name" id="name" type="text" placeholder="Имя" required>
 
                 <label for="phone" class="visually-hidden">Введите номер своего телефона</label>
-                <input name="phone" id="phone" type="tel" placeholder="Телефон" required>
+                <input class="phone" name="phone" id="phone" type="tel" placeholder="Телефон" required>
 
                 <label for="message" class="visually-hidden">Напишите ваш вопрос</label>
-                <textarea name="message" id="message" placeholder="Ваш вопрос" required></textarea>
+                <textarea class="message" name="message" id="message" placeholder="Ваш вопрос" required></textarea>
 
                 <input name="data" id="data" type="checkbox" class="visually-hidden" checked required>
                 <label for="data">Я согласен на обработку персональных данных</label>
                 <button class="button popup__submit" type="submit">Отправить</button>
+                <button class="popup-close" type="button">Закрыть форму</button>
               </form>
 
             </div>
           </section>
-          <!--</div>-->
-
+          </div>
+  <script src="js/script.js"></script>
   </body>
 </html>
 
