@@ -4,3 +4,12 @@
   url("../img/rightrectangle-big.png") 55% 31%  no-repeat;
   background-size: auto, auto, auto, auto;
 }
+
+@media (max-width: $tablet) {
+  .advantages-about-bg {
+background: url("../img/rightrectangle-big.png") -99% 16% no-repeat;
+
+  background-size: auto;
+}
+
+}

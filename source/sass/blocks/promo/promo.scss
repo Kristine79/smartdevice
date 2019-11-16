@@ -80,3 +80,33 @@
   transform: rotate(180deg);
 }
 
+
+@media (max-width: $tablet) {
+
+.promo{
+  margin-bottom: 50px;
+}
+
+  .promo__header{
+    font-size: 60px;
+    line-height: 70px;
+    width:100px;
+    padding-left: 110px;
+  }
+
+  .promo__slogan{
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 88px;
+    width: 393px;
+  }
+
+  .promo__slogan::before{
+    bottom: 62%;
+    width:  33px;
+    left:40px;
+  }
+
+}
+
+

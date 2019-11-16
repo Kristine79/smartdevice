@@ -60,3 +60,16 @@
   width: 80%;
   color: $light-gray;
 }
+
+
+@media (max-width: $tablet) {
+  .about{
+    margin-bottom:91px;
+  }
+
+  .about__text {
+    width: 532px;
+  }
+
+}
+
