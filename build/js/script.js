@@ -1,27 +1,69 @@
-var contactlink = document.querySelector('.popup-writeus');
-var popup = document.querySelector('.contact-form');
-var form = popup.querySelector('.popup-contact');
-var close = popup.querySelector('.popup-close;');
-var inputName = popup.querySelector('.name');
-var textarea = popup.querySelector('.message');
+'use strict';
 
-contactlink.addEventListener('click', function (evt) {
+var ESC_KEYCODE = 27;
+var hideClass = 'visually-hidden';
+
+var body = document.querySelector('body');
+var popupForm = document.querySelector('.popup');
+var form = popupForm.querySelector('.popup-form');
+var closeFormButton = popupForm.querySelector('.popup-contact__close');
+var modalbutton = document.querySelector('.header__button');
+var inputName = popupForm.querySelector('.name');
+var textarea = popupForm.querySelector('.message');
+var phone = popupForm.querySelector('.phone');
+
+
+function disableForm() {
+  popupForm.classList.add(hideClass);
+  closeFormButton.removeEventListener('click', desableForm);
+  document.removeEventListener('keydown', onEscPress);
+}
+
+function onEscPress(evt) {
+  if (evt.keyCode === ESC_KEYCODE) {
+    desableForm();
+  }
+}
+
+function hideForm() {
+  popupForm.addEventListener('click', function (evt) {
+    if (evt.target === closeFormButton || evt.target === popupForm) {
+      disableForm();
+    }
+  });
+  document.addEventListener('keydown', onEscPress);
+}
+
+function enableForm() {
+    if (popupForm.classList.contains(hideClass)) {
+      popupForm.classList.remove(hideClass);
+    }
+
+    hideForm();
+  }
+
+
+modalbutton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.add('popup-show');
+  popupForm.classList.add('contact-show');
 });
-close.addEventListener('click', function (evt) {
+closeFormButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.remove('popup-show');
-  popup.classList.remove('popup-error');
-  popup.offsetWidth = popup.offsetWidth;
+  popupForm.classList.remove('contact-show');
+  popupForm.classList.remove('contact-error');
+  popupForm.offsetWidth = popupForm.offsetWidth;
 });
+
 form.addEventListener('submit', function (evt) {
-  if (!inputName.value || !textarea.value) {
+  if (!inputName.value || !phone.value || !textarea.value) {
     evt.preventDefault();
-    popup.classList.add('popup-error');
+    popupForm.classList.add('contact-error');
   }
   if (!inputName.value ) {
     inputName.classList.add('error');
+  }
+  if (!phone.value ) {
+    phone.classList.add('error');
   }
   if (!textarea.value ) {
     textarea.classList.add('error');
@@ -34,6 +76,13 @@ inputName.addEventListener('input', function() {
     inputName.classList.remove('error');
   }
 });
+phone.addEventListener('input', function() {
+  if (!phone.value ) {
+    phone.classList.add('error');
+  } else {
+    phone.classList.remove('error');
+  }
+});
 textarea.addEventListener('input', function() {
   if (!textarea.value ) {
     textarea.classList.add('error');
@@ -41,10 +90,6 @@ textarea.addEventListener('input', function() {
     textarea.classList.remove('error');
   }
 });
-window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27 && popup.classList.contains('popup-show')) {
-    evt.preventDefault();
-    popup.classList.remove('popup-show');
-    popup.classList.remove('popup-error');
-  }
-});
+
+
+modalbutton.addEventListener('click', enableForm);

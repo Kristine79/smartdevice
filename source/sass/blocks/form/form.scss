@@ -137,6 +137,6 @@
     }
   }
 
-  .contact-form input[id="data"]:checked + label[for="data"]::before {
+  .form-contact input[id="data"]:checked + label[for="data"]::before {
     background: url("../img/check.png") center center no-repeat;
   }

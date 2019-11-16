@@ -1,49 +1,60 @@
+
+.popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
 .popup-form {
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 33px;
+  position: fixed;
+  top: calc(50% - 302px);
+  left: calc(50% - 245px);
+  padding-top: 0;
+  min-width: 490px;
   width: 490px;
+  max-width: 490px;
+  min-height: 605px;
   background-color: $blue;
-display:none;
+
+  &::before {
+    display: none;
+  }
 }
 
-.popup-container {
-  display: flex;
-  flex-wrap: wrap;
+.popup-wrapper {
+  position: relative;
   color: $white;
-  margin-left: auto;
-  margin-right: 27px;
-  margin-bottom: 36px;
-  z-index: 1;
-  padding-left: 39px;
-  padding-right: 39px;
+  margin-bottom: 37px;
+  padding-left: 40px;
+  padding-top: 33px;
+  width: 100%;
 }
 
-.popup__header {
+.popup-wrapper h2 {
   font-family: $font-roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 28px;
   line-height: 39px;
-  margin: 0;
+}
+
+.popup-wrapper p {
+  font-family: $font-mono;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 29px;
+
 }
 
 .popup-contact {
+  position: static;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.popup-container p {
-  font-family: $font-mono;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 51px;
+  border-radius: 0;
 }
 
 .popup-contact input {
@@ -53,9 +64,9 @@ display:none;
   border: none;
   color: $white;
   background-color: $light-blue;
-  margin-bottom: 40px;
-  padding-left: 16px;
-  width: 100%;
+  margin-bottom: 30px;
+  padding-left: 24px;
+  width: 411px;
   height: 52px;
   border-radius: 0;
 
@@ -64,131 +75,159 @@ display:none;
   }
 }
 
-  .popup-contact textarea {
-    font-family: $font-mono;
-    border: none;
-    resize: none;
+.popup-contact textarea {
+  font-family: $font-mono;
+  color: $white;
+  background-color: $light-blue;
+  margin-bottom: 32px;
+  padding-left: 23px;
+  padding-top: 15px;
+  width: 411px;
+  height: 104px;
+  border-radius: 0;
+  border: none;
+  resize: none;
+
+  &::placeholder {
     color: $white;
-    background-color: $light-blue;
-    margin-bottom: 30px;
-    padding-left: 16px;
-    padding-top: 13px;
-    width: 100%;
-    height: 100px;
-    border-radius: 0;
+  }
+}
 
-    &::placeholder {
-      color: $white;
-    }
+.popup-contact label[for="pop-data"] {
+  font-family: $font-mono;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 47px;
+  padding-top: 8px;
+  width: 380px;
+  order: 1;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white;
+    background: none;
+  }
+}
+
+.popup-contact input[id="pop-data"] {
+  left: 48px;
+  bottom: 28px;
+}
+
+.popup-contact input[id="pop-data"]:checked + label[for="pop-data"]::before {
+  background: url("../img/check.png") center center no-repeat;
+}
+
+.popup-contact__submit {
+  width: 411px;
+  height: 47px;
+  margin-bottom: 26px;
+}
+
+.popup-contact__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -3px;
+    width: 1px;
+    height: 22px;
+    background-color: $white;
+    transform: rotate(45deg);
   }
 
-  .popup__submit{
-    width: 100%;
-    margin-bottom: 34px;
+  &::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    width: 1px;
+    height: 23px;
+    background-color: $white;
+    transform: rotate(-45deg);
   }
+}
 
-  .popup-contact input[id="data"] {
-    right: 253px;
-    bottom: 30px;
-  }
+/*для js */
 
-  .popup-contact label[for="data"] {
-    font-family: $font-mono;
-    position: relative;
-    font-size: 14px;
-    line-height: 16px;
-    padding-left: 32px;
-    padding-top: 8px;
-    width: 100%;
-    order: 1;
-    opacity: 0.8;
-    cursor: pointer;
-
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 8px;
-      width: 16px;
-      height: 16px;
-      border: 1px solid $white;
-      background: none;
-    }
-  }
-
-  .contact-popup input[id="data"]:checked + label[for="data"]::before {
-    background: url("../img/check.png") center center no-repeat;
-  }
+.error {
+  border: 4px solid #e74246;
+}
 
 
-/*Стили для js*/
+.error.phone::placeholder,
+.error.name::placeholder,
+.error.message::placeholder {
+  color: #e74246;
+  animation: shake .8s;
+}
 
-.popup-show {
+
+.contact-error {
+  animation: shake .6s;
+}
+
+.contact-show {
   display: block;
   animation: bounce .6s;
 }
 
 
-.popup-error {
-  animation: shake .6s;
+/* Анимация при ошибке*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.popup-close {
-  position: absolute;
-  top: 78px;
-  right: 90px;
-  width: 21px;
-  height: 21px;
-  font-size: 0;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
-
-.popup-close::before,
-.popup-close::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 21px;
-  height: 3px;
-  background-color: #fecccd;
-}
-
-.popup-close::before {
-  transform: rotate(45deg);
-}
-
-.popup-close::after {
-  transform: rotate(-45deg);
-}
-
-.popup-close:hover::after {
- background-color: #fc565a;
-}
-
-.popup-close:hover::before {
- background-color: #fc565a;
-}
-
-.popup-close:active::after {
- background-color: #ffeeee;
-}
-
-.popup-close:active::before {
- background-color: #ffeeee;
-}
-
-
-.error {
-  border: 2px solid #e74246;
-}
-
-
-
-.error.name::placeholder,
-.error.message::placeholder {
-  color: #e74246;
-}
-
