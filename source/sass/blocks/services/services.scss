@@ -9,7 +9,7 @@
 .services__list {
   display: flex;
   justify-content: space-between;
-  margin:0;
+  margin: 0;
 }
 
 .services__bg {
@@ -35,7 +35,7 @@
   line-height: 30px;
   color: $white;
   margin: 0;
-  width:170px;
+  width: 170px;
   margin-left: 44px;
 }
 
@@ -80,24 +80,35 @@
 
 @media (max-width: $tablet) {
 
-.services{
-padding-top:50px;
+  .services {
+    padding-top: 50px;
+  }
+
+  .services__list {
+    flex-direction: column;
+  }
+
+  .services__item {
+    min-height: 100px;
+    height: 200px;
+    width: 100%;
+  }
+
+  .services__title {
+    width: 613px;
+    line-height: 45px;
+  }
+
 }
 
-.services__list {
-flex-direction:column;
-}
+@media (max-width: $mobile) {
+  
+  .services__title {
+    font-size: 28px;
+    line-height: 39px;
+    width: 280px;
+    margin-left: 25px;
 
-.services__item {
-min-height:100px;
-height:200px;
-width:100%;
-}
-
-.services__title{
-width:613px;
-line-height: 45px;
-}
+  }
 
 }
-

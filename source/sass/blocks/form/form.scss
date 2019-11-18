@@ -171,3 +171,30 @@
     background-image: none;
   }
 }
+
+@media (max-width: $mobile) { 
+
+  .form {
+    width: 320px;
+    padding-top: 33px;
+  }
+
+  .form__header {
+    font-size: 28px;
+    line-height: 39px;
+    width: 243px;
+  }
+
+  .form-container {
+    margin-left: 15px;
+    width: 290px
+  }
+
+  .form__submit {
+    margin-bottom: 30px;
+  }
+
+  .form-contact textarea {
+    margin-bottom: 30px;
+  }
+}

@@ -153,3 +153,66 @@
     width: 700px;
   }
 }
+
+@media (max-width: $mobile) {
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    align-items: center;
+  }
+
+  .footer-social__logo {
+    margin-bottom: 27px;
+
+  }
+
+  .footer__year {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  /*Стили для аккордеона js*/
+
+  .toggle-section__toggle {
+    background-color: #CFD8DC;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px;
+    width: 320px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.active, .toggle-section__toggle:hover {
+    background-color: #607D8B;
+}
+
+.toggle-section__toggle:after {
+    content: '\002B';
+    color: #fff;
+	font-size: 18px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.toggle-section__text {
+    padding: 0 18px;
+	color: #212121;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+}
+

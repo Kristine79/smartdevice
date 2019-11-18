@@ -144,7 +144,8 @@
     <div class="about__wrapper">
       <h2 class="about__header">О компании</h2>
       <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. </p>
-      <p class="about__text"> Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+      <p class="about__text"> Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+        <span class="about__text-hidden"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
       <a class="button about__btn" href="#">Подробнее</a>
     </div>
   </section>
@@ -261,9 +262,11 @@
               </ul>
             </div>
 
-            <section class="footer-menu">
-              <h2 class="footer-menu__header">Разделы сайта</h2>
-              <div class="footer-menu__blocks">
+            <section class="footer-menu toggle-section">
+                <div class="footer-toggle toggle-section__toggle" id="sections">
+                  <h2 class="footer-menu__header">Разделы сайта</h2>
+                </div>
+              <div class="footer-menu__blocks toggle-section__text">                
                 <ul сlass="footer-menu__list">
                   <li class="footer-menu__item"><a href="#">О компании</a></li>
                   <li class="footer-menu__item"><a href="#">Продукты</a></li>
@@ -279,9 +282,11 @@
               </div>
             </section>
 
-            <section class="footer-address">
-              <h2 class="footer-address__header">Наш офис</h2>
-              <div class="footer-address__blocks">
+            <section class="footer-address toggle-section">
+                <div class="footer-toggle toggle-section__toggle" id="address">
+                  <h2 class="footer-address__header">Наш офис</h2>
+                </div>
+              <div class="footer-address__blocks toggle-section__text">
                 <ul сlass="footer-address_list">
                   <li class="footer-address__item"><a href="#">г. Мытищи, Олимпийский проспект, д.10 </a></li>
                   <li class="footer-address__item"><a href="#">+7 (495) 589-40-50</a></li>
@@ -290,7 +295,7 @@
                 </ul>
               </div>
             </section>
-          </div>
+          </div>          
 
           <section class="footer__wrapper footer-copyright">
             <ul сlass="footer-copyright__list">

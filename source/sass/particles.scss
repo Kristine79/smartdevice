@@ -4,16 +4,16 @@
 }
 
 @media (max-width: $tablet) {
+
   .services__bg--particles {
-    
+    height: 130vh;
+  }
 
 }
 
+@media (max-width: $mobile) {
 
-
-.services__bg--particles {
-height:130vh;
+  .services__bg--particles {
+    height: 130vh;
+  }
 }
-
-}
-

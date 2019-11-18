@@ -94,4 +94,19 @@ textarea.addEventListener('input', function() {
 
 modalbutton.addEventListener('click', enableForm);
 
+// Аккордеон //
 
+var acc = document.getElementsByClassName('toggle-section__toggle');
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    } 
+  });
+}
