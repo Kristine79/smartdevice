@@ -67,6 +67,10 @@
   padding-bottom: 17px;
 }
 
+.promo__btn-mobile {
+  display: none;
+}
+
 .promo__scroll {
   font-family: $font-mono;
   font-size: 14px;
@@ -83,42 +87,52 @@
 
 @media (max-width: $tablet) {
 
-.promo{
-  margin-bottom: 50px;
-}
+  .promo {
+    margin-bottom: 50px;
+  }
 
-  .promo__header{
+  .promo__header {
     font-size: 60px;
     line-height: 70px;
-    width:100px;
+    width: 100px;
     padding-left: 110px;
   }
 
-  .promo__slogan{
+  .promo__slogan {
     font-size: 18px;
     line-height: 28px;
     padding-left: 88px;
     width: 393px;
   }
 
-  .promo__slogan::before{
+  .promo__slogan::before {
     bottom: 62%;
-    width:  33px;
-    left:40px;
+    width: 33px;
+    left: 40px;
   }
 
   .promo__scroll {
     display: none;
   }
 
+  .promo__btn-mobile {
+    display: none;
+  }
+
 }
 
 @media (max-width: $mobile) {
-  .promo__header{
+
+  .promo {    
+    min-width: 767px;   
+    max-width: 320px;    
+  }
+
+  .promo__header {
     font-size: 40px;
     line-height: 47px;
-    width:100px;
-    padding-left: 20px;    
+    width: 100px;
+    padding-left: 20px;
   }
 
   .promo__slogan {
@@ -128,8 +142,8 @@
     width: 271px;
 
     &:before {
-      bottom: 62%;
-      width:  33px;
+      bottom: 74%;
+      width: 33px;
       left: 20px;
     }
   }
@@ -142,11 +156,8 @@
   .promo__btn-desktop {
     display: none;
   }
+
+  .promo__btn-mobile {
+    display: block;
+  }
 }
-
-
-
-
-
-
-

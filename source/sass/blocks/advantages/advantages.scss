@@ -129,6 +129,27 @@
 
 }
 
+@media (max-width: $mobile) { 
+  .advantages {
+    margin-bottom: 60px;
+  }
+  
+  .advantages__header {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  .advantages-item {
+    width: 290px;
+  }
+
+  .advantages__text {
+    width: 245px;
+  }
+
+}
+
 
 
 

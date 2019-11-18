@@ -1,26 +1,26 @@
 .about {
- display: flex;
- flex-direction: column;
- width: 1170px;
- margin-left: auto;
- margin-right: auto;
- position: relative;
- margin-bottom:110px;
- background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 110px;
+  background-color: #FFFFFF;
 
 
- &::before {
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 0;
-  width: 220px;
-  height: 317px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  background-image: url("../img/about2005.png");
-}
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    width: 220px;
+    height: 317px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-image: url("../img/about2005.png");
+  }
 }
 
 .about__header {
@@ -63,8 +63,8 @@
 
 
 @media (max-width: $tablet) {
-  .about{
-    margin-bottom:91px;
+  .about {
+    margin-bottom: 91px;
   }
 
   .about__text {
@@ -73,3 +73,17 @@
 
 }
 
+@media (max-width: $mobile) {
+
+  .about {
+    margin-left: 17px;
+    margin-right: 15px;
+  }
+
+  .about__wrapper {}
+
+  .about::before {
+    display: none;
+  }
+
+}
