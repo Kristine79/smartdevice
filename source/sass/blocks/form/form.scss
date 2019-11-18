@@ -140,3 +140,34 @@
   .form-contact input[id="data"]:checked + label[for="data"]::before {
     background: url("../img/check.png") center center no-repeat;
   }
+
+
+  @media (max-width: $tablet) { 
+
+    .form {
+      width: 590px;
+      padding-top: 83px;
+    }
+
+    .form::before {
+      display: none;
+    }
+
+    .form-contact {
+      width: 590px;
+     
+    }
+
+    .form-container {
+      margin:0 auto;
+    }
+
+    .form__header {
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    .form-bg {
+      background-image: none;   
+    }    
+  }

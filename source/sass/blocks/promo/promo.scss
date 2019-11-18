@@ -107,6 +107,46 @@
     left:40px;
   }
 
+  .promo__scroll {
+    display: none;
+  }
+
 }
+
+@media (max-width: $mobile) {
+  .promo__header{
+    font-size: 40px;
+    line-height: 47px;
+    width:100px;
+    padding-left: 20px;    
+  }
+
+  .promo__slogan {
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 76px;
+    width: 271px;
+
+    &:before {
+      bottom: 62%;
+      width:  33px;
+      left: 20px;
+    }
+  }
+
+  .promo__btn {
+    width: 287px;
+    margin: 0 auto;
+  }
+
+  .promo__btn-desktop {
+    display: none;
+  }
+}
+
+
+
+
+
 
 
