@@ -39,7 +39,22 @@
         </div>
 
         <div class="header__name">
-          <span class="header__text"> Smart Device</span>
+          <div class="header__text header__text-smoke">
+            <ul>
+              <li>S</li>
+              <li>m</li>
+              <li>a</li>
+              <li>r</li>
+              <li>t</li>
+              <li>&nbsp;</li>
+              <li>D</li>
+              <li>e</li>
+              <li>v</li>
+              <li>i</li>
+              <li>c</li>
+              <li>e</li>
+            </ul>
+          </div>
           <span class="header__slogan">умные технологии</span>
         </div>
       </div>
@@ -56,6 +71,8 @@
     </header>
 
 
+
+
     <section class="promo">
       <div class="promo__text">
         <h2 class="promo__header ">Печатные платы</h2>
@@ -64,15 +81,12 @@
           <span class="promo__btn-desktop">Получить бесплатную консультацию</span>
           <span class="promo__btn-mobile">Бесплатная консультация</span>
         </a>
-        <a class="promo__scroll" href="#">Скролл вниз</a>
+        <a class="promo__scroll">Скролл вниз</a>       
       </div>
 
       <div class="promo__img">
         <img src="img/eboards.png" alt="Электронные платы">
       </div>
-
-
-
     </section>
   </div>
 
@@ -140,8 +154,9 @@
       <a class="button about__btn" href="#">Подробнее</a>
     </div>
   </section>
+</div>
 
-  <div class="services__bg services__bg--particles" id="particles">
+<div class="services__bg services__bg--particles" id="particles">
 
     <section class="services">
       <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
@@ -175,7 +190,7 @@
               </li>
             </ul>
           </section>
-       </div>
+      </div>
 
 
         <div class="form-bg">
@@ -228,7 +243,7 @@
               <p class="footer__year">1999-2018 SD Service Devices</p>
 
 
-              <ul class="footer-social__icons list-icons">
+              <ul class="footer-social__icons">
                 <li class="footer-social__item">
                   <a href="#" aria-label="Аккаунт в Фейсбуке">
                     <svg height="27" width="27">
@@ -253,33 +268,34 @@
               </ul>
             </div>
 
-            <section class="footer-menu toggle-section">
-                <div class="footer-toggle toggle-section__toggle" id="sections">
+            <section class="footer-menu toggle_section">
+                <div class="footer-toggle toggle-section__toggle">
                   <h2 class="footer-menu__header">Разделы сайта</h2>
+                  <span></span>
                 </div>
               <div class="footer-menu__blocks toggle-section__text">                
                 <ul сlass="footer-menu__list">
-                  <li class="footer-menu__item"><a href="#">О компании</a></li></li>
+                  <li class="footer-menu__item"><a href="#">О компании</a></li>
                   <li class="footer-menu__item"><a href="#">Продукты</a></li>
                   <li class="footer-menu__item"><a href="#">Производство печатных плат</a></li>
                   <li class="footer-menu__item"><a href="#">Монтаж печатных плат</a></li>
                 </ul>
                 <ul сlass="footer-menu__list">
-                  <li class="footer-menu__item"><a href="#">Комплектующие</a></li></li>
+                  <li class="footer-menu__item"><a href="#">Комплектующие</a></li>
                   <li class="footer-menu__item"><a href="#">Доставка</a></li>
                   <li class="footer-menu__item"><a href="#">Контакты</a></li>
-
                 </ul>
               </div>
             </section>
 
-            <section class="footer-address toggle-section">
-                <div class="footer-toggle toggle-section__toggle" id="address">
+            <section class="footer-address toggle_section">
+                <div class="footer-toggle toggle-section__toggle">
                   <h2 class="footer-address__header">Наш офис</h2>
+                  <span></span>
                 </div>
               <div class="footer-address__blocks toggle-section__text">
                 <ul сlass="footer-address_list">
-                  <li class="footer-address__item"><a href="#">г. Мытищи, Олимпийский проспект, д.10 </a></li></li>
+                  <li class="footer-address__item"><a href="#">г. Мытищи, Олимпийский проспект, д.10 </a></li>
                   <li class="footer-address__item"><a href="#">+7 (495) 589-40-50</a></li>
                   <li class="footer-address__item"><a href="#">+7 (925) 003-87-6</a></li>
                   <li class="footer-address__item"><a href="#">+7 (926) 926-080-79</a></li>
@@ -289,8 +305,9 @@
           </div>          
 
           <section class="footer__wrapper footer-copyright">
+            <h2 class="visually-hidden">Копирайт</h2>
             <ul сlass="footer-copyright__list">
-              <li class="footer-copyright__item"><a href="#">Все права защищены </a></li></li>
+              <li class="footer-copyright__item footer-copyright__item--hidden"><a href="#">Все права защищены </a></li>
               <li class="footer-copyright__item footer-copyright__item--year"><a href="#">1999-2018 SD Service Devices</a></li>
               <li class="footer-copyright__item"><a href="#">Условия конфиденциальности</a></li>
               <li class="footer-copyright__item"><a href="#"> Developed by wow studio</a></li>
@@ -307,7 +324,7 @@
                 <label for="pop-name" class="visually-hidden">Введите свое имя</label>
                 <input class="name" name="name" id="pop-name" type="text" placeholder="Имя" >
                 <label for="pop-phone" class="visually-hidden">Введите номер своего телефона</label>
-                <input class="phone"name="phone" id="pop-phone" type="tel" placeholder="Телефон">
+                <input class="phone" name="phone" id="pop-phone" type="tel" placeholder="Телефон">
                 <label for="pop-message" class="visually-hidden">Напишите ваш вопрос</label>
                 <textarea class="message" name="message" id="pop-message" placeholder="Ваш вопрос" ></textarea>
                 <input name="data" id="pop-data" type="checkbox" class="visually-hidden" checked >
@@ -319,10 +336,10 @@
           </section>
         </div>
 
-
 <script src="js/script.js"></script>
 <script src="js/particles.js"></script>
 <script src="js/mainparticles.js"></script>
+<script src="js/scrolltop.js"></script>
 
   </body>
 </html>

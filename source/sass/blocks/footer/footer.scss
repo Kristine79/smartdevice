@@ -30,10 +30,19 @@
   display: flex;
   min-width: 52px;
   margin-bottom: 54px;
+  cursor: pointer;  
 }
 
 .footer-social__item {
   margin-right: 16px;
+}
+
+.footer-social__item svg {
+  margin-right: 16px;
+
+  &:hover {
+    fill:red;
+  }
 }
 
 .footer-name {
@@ -61,7 +70,7 @@
 }
 
 .footer-social__icons {
-  display: flex;
+  display: flex;  
 }
 
 .footer-menu__header,
@@ -122,6 +131,9 @@
   display: none;
 }
 
+.footer-menu__item a:hover {
+  color: $blue;
+}
 @media (max-width: $tablet) {
 
   .footer-social {
@@ -164,7 +176,6 @@
 
   .footer-social__logo {
     margin-bottom: 27px;
-
   }
 
   .footer__year {
@@ -172,47 +183,39 @@
     margin-bottom: 32px;
   }
 
-  /*Стили для аккордеона js*/
-
-  .toggle-section__toggle {
-    background-color: #CFD8DC;
-    color: #fff;
-    cursor: pointer;
-    padding: 16px;
+  .footer-copyright ul {
+    display: flex;
+    flex-direction: column;
     width: 320px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 18px;
-    transition: 0.5s;
+    align-items: center;
+  }
+
+  .footer-copyright__item--hidden {
+    display: none;
+  }
+
+  .footer-copyright__item {
+    margin-top: 10px;
+  }
+
+  .footer::after {
+    bottom: 100px;
+  }
+
+  .footer-social__icons {
+    margin-bottom: 55px;
+  }
+
+  .footer-address_list {
+    width: 240px;
+  }
+
+  .footer-address__header {
+    margin-top: 10px;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+  
 }
-
-.active, .toggle-section__toggle:hover {
-    background-color: #607D8B;
-}
-
-.toggle-section__toggle:after {
-    content: '\002B';
-    color: #fff;
-	font-size: 18px;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.toggle-section__text {
-    padding: 0 18px;
-	color: #212121;
-    background-color: #fff;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-
-}
-

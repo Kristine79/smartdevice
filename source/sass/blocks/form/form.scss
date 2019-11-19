@@ -84,6 +84,12 @@
   &::placeholder {
     color: $white;
   }
+  
+  &:focus {
+    border-color: $darkbg;
+    color: $darkbg;
+    outline: none;
+  }
 }
 
 .form-contact textarea {
@@ -102,10 +108,20 @@
   &::placeholder {
     color: $white;
   }
+
+  &:focus {
+    border-color: $darkbg;
+    color: $darkbg;
+    outline: none;
+  }
 }
 
 .form__submit {
   width: 270px;
+
+  &:hover {
+    background-color: $gray;
+  }
 }
 
 .form-contact input[id="data"] {
@@ -155,7 +171,6 @@
 
   .form-contact {
     width: 590px;
-
   }
 
   .form-container {
@@ -173,6 +188,9 @@
 }
 
 @media (max-width: $mobile) { 
+  .form-bg {
+    padding-bottom: 41px;
+  }
 
   .form {
     width: 320px;
@@ -182,12 +200,12 @@
   .form__header {
     font-size: 28px;
     line-height: 39px;
-    width: 243px;
+    width: 263px;
   }
 
   .form-container {
     margin-left: 15px;
-    width: 290px
+    margin-right: 15px;
   }
 
   .form__submit {
@@ -196,5 +214,14 @@
 
   .form-contact textarea {
     margin-bottom: 30px;
+  }
+
+  .form-container p {
+    width: 256px;
+  }
+
+  .form-contact {
+    width: 290px;
+    margin: 0 auto;
   }
 }

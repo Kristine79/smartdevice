@@ -10,6 +10,7 @@
 .header__logo {
   display: flex;
   min-width: 52px;
+  cursor: pointer;  
 }
 
 .header__img {
@@ -30,6 +31,56 @@
   color: $white;
 }
 
+
+/*Анимация текста в лого*/
+
+.header__text-smoke ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header__text-smoke ul li {
+  list-style: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Cuprum Bold";
+  font-size: 20px;
+
+
+}
+.header__text-smoke ul:hover li {
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+   
+  }
+  100% {
+    transform: rotate(45deg) translateY(-200px);
+
+  }
+}
+
+.header__text-smoke ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.header__text-smoke ul li:nth-child(2) {
+  animation-delay: .4s;
+}
+.header__text-smoke ul li:nth-child(3) {
+  animation-delay: .8s;
+}
+.header__text-smoke ul li:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.header__text-smoke ul li:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+/*Конец анимации текста*/
+
 .header__slogan {
   font-family: $font-roboto;
   font-style: normal;
@@ -45,6 +96,10 @@
   margin-left: auto;
   min-width: 650px;
   align-items: baseline;
+
+  a:hover {
+    color: $blue;
+  }
 }
 
 .header__email {
@@ -98,7 +153,13 @@
   margin-left: 40px;
   margin-bottom: 6px;
   width: 180px;
+
+  &:hover {    
+    background-color: $blue;
+  }
+ 
 }
+
 
 @media (max-width: $tablet) {
 
@@ -139,6 +200,7 @@
 
   .header {
     padding-top: 30px;
+    min-width: 320px;
   }
 
   .header__contacts {
@@ -153,10 +215,25 @@
     margin-left: auto;  
 
     &::before {
-      left: 0;
+      left: -15px;
       width: 25px;
      height: 19px;
     }
+  }
+
+  .header__phone {
+    margin-left: auto;
+    min-width: 24px; 
+
+    &::before {
+     left: -170px;
+     width: 24px;
+     height: 24px;
+   }
+  }
+
+  .header__logo {
+    padding-left: 20px;
   }
 
 

@@ -70,6 +70,16 @@
   height: 52px;
   border-radius: 0;
 
+  &:hover {   
+    border: 1px $white solid;
+  }
+
+  &:focus {
+    border-color: $darkbg;
+    color: $darkbg;
+    outline: none;
+  }
+
   &::placeholder {
     color: $white;
   }
@@ -87,6 +97,16 @@
   border-radius: 0;
   border: none;
   resize: none;
+
+  &:hover {
+    border: 1px $white solid;    
+  }
+
+  &:focus {
+    border-color: $darkbg;
+    color: $darkbg;
+    outline: none;
+  }
 
   &::placeholder {
     color: $white;
@@ -130,6 +150,10 @@
   width: 411px;
   height: 47px;
   margin-bottom: 26px;
+
+  &:hover {
+    background-color: $gray;
+  }
 }
 
 .popup-contact__close {

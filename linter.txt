@@ -1,0 +1,11 @@
+
+> Liga-A-start-template@1.0.0 test C:\github\smart-device
+> npm run editorconfig && npm run stylelint && eslint source/js/
+
+
+> Liga-A-start-template@1.0.0 editorconfig C:\github\smart-device
+> editorconfig-cli
+
+Using '.editorconfig' from: "C:\github\smart-device\.editorconfig"
+Loaded GLOBs from 'C:\github\smart-device\package.json': *.json,*.js,source/*.html,source/js/**/*.js,source/img/**/*.svg,source/sass/**/*.{sass,scss}
+File: source/sass/common/normalize.scss [excluded]

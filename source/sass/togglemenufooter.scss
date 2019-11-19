@@ -1,0 +1,102 @@
+@media (max-width: $mobile) {
+  .toggle-section__toggle {
+    cursor: pointer;
+    padding: 16px;
+    width: 320px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.5s;
+  }
+
+  .toggle_section {
+    position: relative;
+  }
+
+  .active,
+  .toggle-section__toggle:hover {
+    background-color: $blue;
+  }
+
+  .toggle-section__toggle:before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 17px;
+    height: 17px;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    font-size: 0;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -3px;
+      width: 1px;
+      height: 22px;
+      background-color: red;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -3px;
+      width: 1px;
+      height: 23px;
+      background-color: red;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .toggle-section__text {
+    padding: 0 18px;
+    color: #212121;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    width: 300px;
+  }
+
+  .toggle-section__toggle {
+    position: relative;
+    border-top: 1px solid $graylighter;
+  }
+
+  .toggle-section__toggle span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    transform: translateY(-50%);
+  }
+
+  .toggle-section__toggle span:after,
+  .toggle-section__toggle span:before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .toggle-section__toggle span:before {
+    width: 100%;
+    height: 1px;
+  }
+
+  .toggle-section__toggle span:after {
+    width: 1px;
+    height: 100%;
+  }
+
+  .toggle-section__toggle.active span:after {
+    display: none;
+  }
+}

@@ -1,19 +1,17 @@
 .mainscreen-bg {
   background: url("../img/header_background.png") center top no-repeat,
-   url("../img/two_rectangles.png") center top no-repeat;
+    url("../img/two_rectangles.png") center top no-repeat;
   background-size: cover, auto;
   background-color: $darkbg;
 }
-
 
 @media (max-width: $mobile) {
 
   .mainscreen-bg {
     background: url("../img/header_background.png") center top no-repeat,
-     url("../img/two_rectangles.png") 58% 80% no-repeat;
+      url("../img/two_rectangles.png") 55% 173% no-repeat;
     background-size: cover, auto;
     background-color: $darkbg;
   }
 
 }
-
