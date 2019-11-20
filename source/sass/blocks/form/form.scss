@@ -120,7 +120,8 @@
   width: 270px;
 
   &:hover {
-    background-color: $gray;
+    background-color: $white;
+    color: $blue;
   }
 }
 
@@ -134,7 +135,7 @@
   position: relative;
   font-size: 14px;
   line-height: 16px;
-  padding-left: 32px;
+  padding-left: 22px;
   padding-top: 8px;
   width: 262px;
   order: 1;
@@ -156,6 +157,9 @@
 .form-contact input[id="data"]:checked+label[for="data"]::before {
   background: url("../img/check.png") center center no-repeat;
 }
+
+
+
 
 
 @media (max-width: $tablet) {

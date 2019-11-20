@@ -38,11 +38,11 @@
 }
 
 .footer-social__item svg {
-  margin-right: 16px;
+  margin-right: 16px;  
+}
 
-  &:hover {
-    fill:red;
-  }
+.testhover:hover {
+  fill:green;
 }
 
 .footer-name {
@@ -141,6 +141,12 @@
 
 .footer-address__item a:hover {
   color: $blue;
+}
+
+.footer-social__item {
+  &:hover {
+    opacity: 0.5;
+}
 }
 
 

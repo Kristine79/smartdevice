@@ -91,7 +91,7 @@
           <span class="promo__btn-desktop">Получить бесплатную консультацию</span>
           <span class="promo__btn-mobile">Бесплатная консультация</span>
         </a>
-        <a class="promo__scroll" href="#advantages">Скролл вниз</a>       
+        <a class="promo__scroll">Скролл вниз</a>       
       </div>
 
       <div class="promo__img">
@@ -176,7 +176,7 @@
             <h3 class="services__header">Производство печатных плат</h3>
             <picture>
               <source type="image/webp" srcset="../img/service1.webp 1x, img/service1@2x.webp 2x">
-                <img src="../img/service1.png" srcset="../img/service1@2x.png 2x" alt="Производство печатных плат" width="290" height="620">
+                <img src="/img/service1.png" srcset="../img/service1@2x.png 2x" alt="Производство печатных плат" width="290" height="620">
               </picture>
             </a>
           </li>
@@ -214,7 +214,7 @@
                 <input name="name" id="name" type="text" placeholder="Имя" required="">
 
                 <label for="phone" class="visually-hidden">Введите номер своего телефона</label>
-                <input name="phone" id="phone" type="tel" placeholder="Телефон" pattern="^[ 0-9/(/)/+]+$" required="">
+                <input name="phone" id="phone" type="tel" placeholder="Телефон" pattern="^[ 0-9/(/)/+]+$" title="Введите любые 9 чисел" required="">
 
                 <label for="message" class="visually-hidden">Напишите ваш вопрос</label>
                 <textarea name="message" id="message" placeholder="Ваш вопрос" required=""></textarea>
@@ -256,7 +256,7 @@
               <ul class="footer-social__icons">
                 <li class="footer-social__item">
                   <a href="#" aria-label="Аккаунт в Фейсбуке">
-                    <svg height="27" width="27">
+                    <svg class="testhover" height="27" width="27">
                       <use xlink:href="#fb"></use>
                     </svg>
                   </a>
@@ -332,12 +332,12 @@
               <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
               <form class="popup-contact">
                 <label for="pop-name" class="visually-hidden">Введите свое имя</label>
-                <input class="name" name="name" id="pop-name" type="text" placeholder="Имя">
+                <input class="name" name="name" id="pop-name" type="text" placeholder="Имя" autofocus="" required="">
                 <label for="pop-phone" class="visually-hidden">Введите номер своего телефона</label>
-                <input class="phone" name="phone" id="pop-phone" type="tel" pattern="^[ 0-9/(/)/+]+$" placeholder="Телефон">
+                <input class="phone" name="phone" id="pop-phone" type="tel" pattern="^[ 0-9/(/)/+]+$" placeholder="Телефон" required="">
                 <label for="pop-message" class="visually-hidden">Напишите ваш вопрос</label>
-                <textarea class="message" name="message" id="pop-message" placeholder="Ваш вопрос"></textarea>
-                <input name="data" id="pop-data" type="checkbox" class="visually-hidden" checked="">
+                <textarea class="message" name="message" id="pop-message" placeholder="Ваш вопрос" required=""></textarea>
+                <input name="data" id="pop-data" type="checkbox" class="visually-hidden" checked="" required="">
                 <label for="pop-data">Я согласен на обработку персональных данных</label>
                 <button class="button popup-contact__submit" type="submit">Задать вопрос</button>
                 <button class="popup-contact__close" type="button">Закрыть форму</button>

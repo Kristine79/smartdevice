@@ -67,7 +67,8 @@
   padding-bottom: 17px;
   
   &:hover {
-    background-color: $gray;
+    background-color: $white;
+    color: $blue;
   }
 }
 
@@ -109,10 +110,6 @@
   pointer-events: none;
   cursor: default;
   opacity: 0;
-}
-
-.promo__btn {
-  scroll-behavior: smooth; 
 }
 
 @media (max-width: $tablet) {

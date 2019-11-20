@@ -152,7 +152,8 @@
   margin-bottom: 26px;
 
   &:hover {
-    background-color: $gray;
+    background-color: $white;
+    color: $blue;
   }
 }
 
@@ -175,7 +176,7 @@
     width: 1px;
     height: 22px;
     background-color: $white;
-    transform: rotate(45deg);
+    transform: rotate(45deg);   
   }
 
   &::after {
@@ -185,8 +186,13 @@
     width: 1px;
     height: 23px;
     background-color: $white;
-    transform: rotate(-45deg);
-  }
+    transform: rotate(-45deg);    
+  }  
+}
+
+.popup-contact__close:hover::before,
+.popup-contact__close:hover::after {
+  opacity: .3;
 }
 
 /*для js */
