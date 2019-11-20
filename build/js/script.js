@@ -35,12 +35,12 @@ function hideForm() {
 }
 
 function enableForm() {
-    if (popupForm.classList.contains(hideClass)) {
-      popupForm.classList.remove(hideClass);
-    }
-
-    hideForm();
+  if (popupForm.classList.contains(hideClass)) {
+    popupForm.classList.remove(hideClass);
   }
+
+  hideForm();
+}
 
 
 modalbutton.addEventListener('click', function (evt) {
@@ -93,31 +93,29 @@ textarea.addEventListener('input', function() {
 
 modalbutton.addEventListener('click', enableForm);
 
+
+
 // Аккордеон //
 
 var acc = document.getElementsByClassName('toggle-section__toggle');
 var i;
-var openItem = document.getElementsByClassName('toggle-section__text')[1];
-
-function slideToggle(elem) {
-  if (elem.style.maxHeight) {
-    elem.style.maxHeight = null;
-  } else {
-    elem.style.maxHeight = elem.scrollHeight + 'px';
-  }
-}
+var activeTab = null;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
+    if(activeTab && this !== activeTab) {
+      activeTab.classList.remove('active');
+      activeTab.nextElementSibling.style.maxHeight = null;
+    }
+    
     this.classList.toggle('active');
     var panel = this.nextElementSibling;
-    slideToggle(panel);
+    
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+    activeTab = this;
   });
 }
-
-function openAcc() {
-  acc[1].classList.add('active');
-  slideToggle(openItem); 
-}
-
-openAcc();

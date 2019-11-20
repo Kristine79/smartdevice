@@ -134,6 +134,16 @@
 .footer-menu__item a:hover {
   color: $blue;
 }
+
+.footer-copyright__item--link a:hover {
+  color: $blue;
+}
+
+.footer-address__item a:hover {
+  color: $blue;
+}
+
+
 @media (max-width: $tablet) {
 
   .footer-social {

@@ -111,6 +111,9 @@
   opacity: 0;
 }
 
+.promo__btn {
+  scroll-behavior: smooth; 
+}
 
 @media (max-width: $tablet) {
 

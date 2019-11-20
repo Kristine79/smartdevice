@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Smart Device производитель электронных плат">
   <title>Проект Smart Device</title>
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2">
@@ -90,7 +91,7 @@
           <span class="promo__btn-desktop">Получить бесплатную консультацию</span>
           <span class="promo__btn-mobile">Бесплатная консультация</span>
         </a>
-        <a class="promo__scroll">Скролл вниз</a>       
+        <a class="promo__scroll" href="#advantages">Скролл вниз</a>       
       </div>
 
       <div class="promo__img">
@@ -202,7 +203,7 @@
       </div>
 
 
-        <div class="form-bg">
+        <div class="form-bg" id="form">
           <section class="form">
             <div class="form-container">
               <h2 class="form__header">Остались вопросы? Задайте их нам!</h2>
@@ -213,7 +214,7 @@
                 <input name="name" id="name" type="text" placeholder="Имя" required="">
 
                 <label for="phone" class="visually-hidden">Введите номер своего телефона</label>
-                <input name="phone" id="phone" type="tel" placeholder="Телефон" required="">
+                <input name="phone" id="phone" type="tel" placeholder="Телефон" pattern="^[ 0-9/(/)/+]+$" required="">
 
                 <label for="message" class="visually-hidden">Напишите ваш вопрос</label>
                 <textarea name="message" id="message" placeholder="Ваш вопрос" required=""></textarea>
@@ -305,9 +306,9 @@
               <div class="footer-address__blocks toggle-section__text">
                 <ul сlass="footer-address_list">
                   <li class="footer-address__item"><a href="#">г. Мытищи, Олимпийский проспект, д.10 </a></li>
-                  <li class="footer-address__item"><a href="#">+7 (495) 589-40-50</a></li>
-                  <li class="footer-address__item"><a href="#">+7 (925) 003-87-6</a></li>
-                  <li class="footer-address__item"><a href="#">+7 (926) 926-080-79</a></li>
+                  <li class="footer-address__item"><a href="tel:+7(495)5894050">+7 (495) 589-40-50</a></li>
+                  <li class="footer-address__item"><a href="tel:+7(495003876">+7 (925) 003-87-6</a></li>
+                  <li class="footer-address__item"><a href="tel:+7(495)92608079">+7 (926) 926-080-79</a></li>
                 </ul>
               </div>
             </section>
@@ -316,10 +317,10 @@
           <section class="footer__wrapper footer-copyright">
             <h2 class="visually-hidden">Копирайт</h2>
             <ul сlass="footer-copyright__list">
-              <li class="footer-copyright__item footer-copyright__item--hidden"><a href="#">Все права защищены </a></li>
-              <li class="footer-copyright__item footer-copyright__item--year"><a href="#">1999-2018 SD Service Devices</a></li>
-              <li class="footer-copyright__item"><a href="#">Условия конфиденциальности</a></li>
-              <li class="footer-copyright__item"><a href="#"> Developed by wow studio</a></li>
+              <li class="footer-copyright__item footer-copyright__item--hidden">Все права защищены</li>
+              <li class="footer-copyright__item footer-copyright__item--year">1999-2018 SD Service Devices</li>
+              <li class="footer-copyright__item footer-copyright__item--link"><a href="#">Условия конфиденциальности</a></li>
+              <li class="footer-copyright__item footer-copyright__item--link"><a href="#"> Developed by wow studio</a></li>
             </ul>
           </section>
         </footer>
@@ -333,7 +334,7 @@
                 <label for="pop-name" class="visually-hidden">Введите свое имя</label>
                 <input class="name" name="name" id="pop-name" type="text" placeholder="Имя">
                 <label for="pop-phone" class="visually-hidden">Введите номер своего телефона</label>
-                <input class="phone" name="phone" id="pop-phone" type="tel" placeholder="Телефон">
+                <input class="phone" name="phone" id="pop-phone" type="tel" pattern="^[ 0-9/(/)/+]+$" placeholder="Телефон">
                 <label for="pop-message" class="visually-hidden">Напишите ваш вопрос</label>
                 <textarea class="message" name="message" id="pop-message" placeholder="Ваш вопрос"></textarea>
                 <input name="data" id="pop-data" type="checkbox" class="visually-hidden" checked="">
@@ -346,8 +347,6 @@
         </div>
 
 <script src="js/script.js"></script>
-<script src="js/particles.js"></script>
-<script src="js/mainparticles.js"></script>
 <script src="js/scrolltop.js"></script>
 
   </body>

@@ -65,6 +65,11 @@
   display: block;
   padding-top: 50px;
   height: 100%;
+
+  &:hover {
+    background-color: $blue;
+    cursor: pointer;
+  }
 }
 
 .services__item img {
