@@ -145,6 +145,10 @@
   .promo__btn-mobile {
     display: none;
   }
+
+  .promo__img {
+    padding-right: 0px;
+  }
 }
 
 @media (max-width: $mobile) {

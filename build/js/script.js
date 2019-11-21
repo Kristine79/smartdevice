@@ -1,5 +1,3 @@
-'use strict';
-
 var ESC_KEYCODE = 27;
 var hideClass = 'visually-hidden';
 
@@ -11,111 +9,76 @@ var modalbutton = document.querySelector('.header__button');
 var inputName = popupForm.querySelector('.name');
 var textarea = popupForm.querySelector('.message');
 var phone = popupForm.querySelector('.phone');
+var nameFocus = popupForm.querySelector('input[name=name]');
 
+var disableScroll = 'overflow: hidden;';
+var enableScroll = 'overflow: auto;';
 
-function disableForm() {
+function onClosePopup(evt) {
+  if (evt.target === popupForm || evt.target === closeFormButton) {
+    closePopup();
+
+    document.removeEventListener('keydown', onClosePopup);
+  }
+}
+
+function closePopup() {
   popupForm.classList.add(hideClass);
-  closeFormButton.removeEventListener('click', desableForm);
-  document.removeEventListener('keydown', onEscPress);
+  body.removeAttribute('style');
 }
 
-function onEscPress(evt) {
+function onKeyPress(evt) {
   if (evt.keyCode === ESC_KEYCODE) {
-    desableForm();
+    closePopup();
+    document.removeEventListener('keydown', onKeyPress);
   }
 }
 
-function hideForm() {
-  popupForm.addEventListener('click', function (evt) {
-    if (evt.target === closeFormButton || evt.target === popupForm) {
-      disableForm();
-    }
-  });
-  document.addEventListener('keydown', onEscPress);
+function onOpenPopup() {
+  popupForm.classList.remove(hideClass);
+
+  nameFocus.focus();
+  body.style = disableScroll;
+  document.addEventListener('keydown', onKeyPress);
+  popupForm.addEventListener('click', onClosePopup);
 }
 
-function enableForm() {
-  if (popupForm.classList.contains(hideClass)) {
-    popupForm.classList.remove(hideClass);
-  }
+modalbutton.addEventListener('click', onOpenPopup);
 
-  hideForm();
-}
-
-
-modalbutton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popupForm.classList.add('contact-show');
-});
-closeFormButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popupForm.classList.remove('contact-show');
-  popupForm.classList.remove('contact-error');
-  popupForm.offsetWidth = popupForm.offsetWidth;
-});
-
-form.addEventListener('submit', function (evt) {
+form.addEventListener('submit', function(evt) {
   if (!inputName.value || !phone.value || !textarea.value) {
     evt.preventDefault();
     popupForm.classList.add('contact-error');
   }
-  if (!inputName.value ) {
+  if (!inputName.value) {
     inputName.classList.add('error');
   }
-  if (!phone.value ) {
+  if (!phone.value) {
     phone.classList.add('error');
   }
-  if (!textarea.value ) {
+  if (!textarea.value) {
     textarea.classList.add('error');
   }
 });
 inputName.addEventListener('input', function() {
-  if (!inputName.value ) {
+  if (!inputName.value) {
     inputName.classList.add('error');
   } else {
     inputName.classList.remove('error');
   }
 });
 phone.addEventListener('input', function() {
-  if (!phone.value ) {
+  if (!phone.value) {
     phone.classList.add('error');
   } else {
     phone.classList.remove('error');
   }
 });
+
 textarea.addEventListener('input', function() {
-  if (!textarea.value ) {
+  if (!textarea.value) {
     textarea.classList.add('error');
   } else {
     textarea.classList.remove('error');
   }
 });
-
-modalbutton.addEventListener('click', enableForm);
-
-
-
-// Аккордеон //
-
-var acc = document.getElementsByClassName('toggle-section__toggle');
-var i;
-var activeTab = null;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function() {
-    if(activeTab && this !== activeTab) {
-      activeTab.classList.remove('active');
-      activeTab.nextElementSibling.style.maxHeight = null;
-    }
-    
-    this.classList.toggle('active');
-    var panel = this.nextElementSibling;
-    
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 'px';
-    }
-    activeTab = this;
-  });
-}

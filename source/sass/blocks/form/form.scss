@@ -152,6 +152,10 @@
     border: 1px solid $white;
     background: none;
   }
+  
+  &:hover {
+    opacity: .2;
+  }
 }
 
 .form-contact input[id="data"]:checked+label[for="data"]::before {
