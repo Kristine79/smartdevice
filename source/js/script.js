@@ -1,3 +1,6 @@
+
+'use strict'
+
 var ESC_KEYCODE = 27;
 var hideClass = 'visually-hidden';
 
@@ -82,3 +85,5 @@ textarea.addEventListener('input', function() {
     textarea.classList.remove('error');
   }
 });
+
+

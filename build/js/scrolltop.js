@@ -1,3 +1,5 @@
+'use strict'
+
 V = 1;  
 linkScroll = document.querySelector('[href="#advantages"]');
 linkScroll.addEventListener('click', function(e) { 

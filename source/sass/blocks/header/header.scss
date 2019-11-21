@@ -163,6 +163,11 @@
 
 @media (max-width: $tablet) {
 
+  .header {
+    min-width: 767px;
+    max-width: 1023px;
+  }
+
   .header__email,
   .header__phone {
 

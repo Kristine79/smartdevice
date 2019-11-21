@@ -82,7 +82,7 @@
           <span class="promo__btn-desktop">Получить бесплатную консультацию</span>
           <span class="promo__btn-mobile">Бесплатная консультация</span>
         </a>
-        <a class="promo__scroll">Скролл вниз</a>       
+        <a href="#advantages" class="promo__scroll">Скролл вниз</a>      
       </div>
 
       <div class="promo__img">
@@ -92,7 +92,7 @@
   </div>
 
   <div class="advantages-about-bg">
-    <section class="advantages">
+    <section id="advantages" class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages-list">
         <li>
@@ -193,31 +193,33 @@
           </section>
       </div>
 
+      <div class="form-bg" id="form">
+        <section class="form">
+          <div class="form-container">
+            <h2 class="form__header">Остались вопросы? Задайте их нам!</h2>
+            <p>Мы проконсультируем Вас бесплатно</p>
 
-        <div class="form-bg" id="form">
-          <section class="form">
-            <div class="form-container">
-              <h2 class="form__header">Остались вопросы? Задайте их нам!</h2>
-              <p>Мы проконсультируем Вас бесплатно</p>
+            <form class="form-contact">
+              <label for="name" class="visually-hidden">Введите свое имя</label>
+              <input name="name" id="name" type="text" placeholder="Имя" required>
 
-              <form class="form-contact">
-                <label for="name" class="visually-hidden">Введите свое имя</label>
-                <input name="name" id="name" type="text" placeholder="Имя" required>
+              <label for="phone" class="visually-hidden">Введите номер своего телефона</label>
+              <input name="phone" id="phone" type="tel" placeholder="Телефон" pattern="^((\+7|7|8)+([0-9]){10})$"   title="Введите телефонный номер в формате +7(ХХХ)ХХX-ХХ-ХХ" required>
 
-                <label for="phone" class="visually-hidden">Введите номер своего телефона</label>
-                <input name="phone" id="phone" type="tel" placeholder="Телефон" pattern="^[ 0-9/(/)/+]+$"   title="Введите любые 9 чисел" required>
+              <label for="message" class="visually-hidden">Напишите ваш вопрос</label>
+              <textarea name="message" id="message" placeholder="Ваш вопрос" required></textarea>
 
-                <label for="message" class="visually-hidden">Напишите ваш вопрос</label>
-                <textarea name="message" id="message" placeholder="Ваш вопрос" required></textarea>
+              <span class="form-personal">                 
+                  <input name="data" id="data" type="checkbox" class="visually-hidden" checked required>
+                  <label for="data">Я согласен на обработку персональных данных</label>            
+              </span>
+              <button class="button form__submit" type="submit">Задать вопрос</button>
+                
+            </form>
 
-                <input name="data" id="data" type="checkbox" class="visually-hidden" checked required>
-                <label for="data">Я согласен на обработку персональных данных</label>
-                <button class="button form__submit" type="submit">Задать вопрос</button>
-              </form>
-
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
+      </div>
 
 
 
@@ -325,9 +327,10 @@
                 <label for="pop-name" class="visually-hidden">Введите свое имя</label>
                 <input class="name" name="name" id="pop-name" type="text" placeholder="Имя" autofocus required>
                 <label for="pop-phone" class="visually-hidden">Введите номер своего телефона</label>
-                <input class="phone" name="phone" id="pop-phone" type="tel" pattern="^[ 0-9/(/)/+]+$" placeholder="Телефон" required>
+                <input class="phone" name="phone" id="pop-phone" type="tel" pattern="^((\+7|7|8)+([0-9]){10})$" placeholder="Телефон"  title="Введите телефонный номер в формате +7(ХХХ)ХХX-ХХ-ХХ"  required>
                 <label for="pop-message" class="visually-hidden">Напишите ваш вопрос</label>
                 <textarea class="message" name="message" id="pop-message" placeholder="Ваш вопрос" required ></textarea>
+                <span class="data-personal">  
                 <input name="data" id="pop-data" type="checkbox" class="visually-hidden" checked required>
                 <label for="pop-data">Я согласен на обработку персональных данных</label>
                 <button class="button popup-contact__submit" type="submit">Задать вопрос</button>
@@ -339,6 +342,7 @@
 
 <script src="js/script.js"></script>
 <script src="js/scrolltop.js"></script>
+<script src="https://unpkg.com/imask"></script>
 
   </body>
 </html>
