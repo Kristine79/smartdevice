@@ -13,9 +13,10 @@ var inputName = popupForm.querySelector('.name');
 var textarea = popupForm.querySelector('.message');
 var phone = popupForm.querySelector('.phone');
 var nameFocus = popupForm.querySelector('input[name=name]');
-
 var disableScroll = 'overflow: hidden;';
 var enableScroll = 'overflow: auto;';
+
+
 
 function onClosePopup(evt) {
   if (evt.target === popupForm || evt.target === closeFormButton) {
@@ -62,6 +63,10 @@ form.addEventListener('submit', function(evt) {
   if (!textarea.value) {
     textarea.classList.add('error');
   }
+  if (!checkbox.value) {
+    checkbox.classList.add('contact-error');
+  }
+
 });
 inputName.addEventListener('input', function() {
   if (!inputName.value) {
@@ -86,31 +91,8 @@ textarea.addEventListener('input', function() {
   }
 });
 
-//скролл
-
-var anchors = [].slice.call(document.querySelectorAll('a[href*="#"]'));
-var animationTime = 600;
-var framesCount = 60;
 
 
-anchors.forEach(function (item) {
-  item.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    var coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
-
-    var scroller = setInterval(function () {
-      var scrollBy = coordY / framesCount;
-
-      if (scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-        window.scrollBy(0, scrollBy);
-      } else {
-        window.scrollTo(0, coordY);
-        clearInterval(scroller);
-      }
-    }, animationTime / framesCount);
-  });
-});
 
 
 // Аккордеон //
@@ -137,4 +119,7 @@ for (i = 0; i < acc.length; i++) {
     activeTab = this;
   });
 }
+
+
+
 

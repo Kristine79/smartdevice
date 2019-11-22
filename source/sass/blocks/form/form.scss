@@ -87,9 +87,8 @@
   }
   
   &:focus {
-    border-color: $darkbg;
-    color: $darkbg;
-    outline: none;
+    border: 1px solid $gray;
+    outline: none;  
   }
 }
 
@@ -111,8 +110,7 @@
   }
 
   &:focus {
-    border-color: $darkbg;
-    color: $darkbg;
+    border: 1px solid $gray;
     outline: none;
   }
 }
