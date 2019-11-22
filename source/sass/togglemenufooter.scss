@@ -1,5 +1,5 @@
 @media (max-width: $mobile) {
-  .toggle-section__toggle {
+  .toggle-section {
     cursor: pointer;
     padding: 16px;
     width: 320px;
@@ -9,16 +9,16 @@
     transition: 0.5s;
   }
 
-  .toggle_section {
+  .toggle {
     position: relative;
   }
 
   .active,
-  .toggle-section__toggle:hover {
+  .toggle-section:hover {
     
   }
 
-  .toggle-section__toggle:before {
+  .toggle-section:before {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -51,7 +51,7 @@
     }
   }
 
-  .toggle-section__text {
+  .toggle-text {
     padding: 0 18px;
     color: #212121;
     background-color: #fff;
@@ -61,12 +61,12 @@
     width: 300px;
   }
 
-  .toggle-section__toggle {
+  .toggle-section {
     position: relative;
     border-top: 1px solid $graylighter;
   }
 
-  .toggle-section__toggle span {
+  .toggle-section span {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -76,8 +76,8 @@
     transform: translateY(-50%);
   }
 
-  .toggle-section__toggle span:after,
-  .toggle-section__toggle span:before {
+  .toggle-section span:after,
+  .toggle-section span:before {
     content: '';
     position: absolute;
     background-color: #fff;
@@ -86,17 +86,17 @@
     transform: translate(-50%, -50%);
   }
 
-  .toggle-section__toggle span:before {
+  .toggle-section span:before {
     width: 100%;
     height: 1px;
   }
 
-  .toggle-section__toggle span:after {
+  .toggle-section span:after {
     width: 1px;
     height: 100%;
   }
 
-  .toggle-section__toggle.active span:after {
+  .toggle-section.active span:after {
     display: none;
   }
 }

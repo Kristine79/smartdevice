@@ -1,18 +1,28 @@
 .promo {
-  display: flex;
-  min-width: 1000px;
+  display: flex;  
   margin: 0 auto;
-  max-width: 1500px;
   position: relative;
   margin-bottom: 109px; 
+  min-width: 1007px;
+  width: 81.56%;
+  max-width: 1600px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -26px;
+    width: 705px;
+    height: 515px;
+    background-image: url('../img/eboards.png');
+    background-color: transparent;
+  }
 }
 
 .promo__text {
   display: flex;
   flex-direction: column;
-  position: relative;
-  
+  position: relative;  
 }
 
 .promo__header {
@@ -118,6 +128,16 @@
 
   .promo {
     margin-bottom: 50px;
+    min-width: 680px;
+    width: 88.54%;
+
+    &::after {
+      left: 355px;
+      top: 37px;
+      width: 465px;
+      height: 340px;
+      background-size: contain;
+    }
   }
 
   .promo__header {
@@ -150,6 +170,23 @@
 }
 
 @media (max-width: $mobile) {
+
+  .promo {
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    padding-top: 34px;
+    min-width: 320px;
+    width: 100%;
+    max-width: 400px;
+
+    &::after {
+      left: 27px;
+      top: -160px;
+      width: 301px;
+      height: 220px;
+    }
+  }
+  
   .promo__header {
     font-size: 40px;
     line-height: 47px;

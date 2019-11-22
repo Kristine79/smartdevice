@@ -111,3 +111,30 @@ anchors.forEach(function (item) {
     }, animationTime / framesCount);
   });
 });
+
+
+// Аккордеон //
+
+var acc = document.getElementsByClassName('toggle-section');
+var i;
+var activeTab = null;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function() {
+    if(activeTab && this !== activeTab) {
+      activeTab.classList.remove('active');
+      activeTab.nextElementSibling.style.maxHeight = null;
+    }
+    
+    this.classList.toggle('active');
+    var panel = this.nextElementSibling;
+    
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+    activeTab = this;
+  });
+}
+
