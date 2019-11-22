@@ -96,15 +96,18 @@
   width: 270px;
   height: 52px;
   border-radius: 0;
+
+
+  &:focus {
+    border: 1px solid $gray;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $white;
+  }
 }
-.form-contact input::placeholder {
-  color: #FFFFFF;
-}
-.form-contact input:focus {
-  border-color: #1b2d37;
-  color: #1b2d37;
-  outline: none;
-}
+
 
 .form-contact textarea {
   font-family: "PT Mono", "Arial", sans-serif;
@@ -118,23 +121,26 @@
   width: 100%;
   height: 154px;
   border-radius: 0;
-}
-.form-contact textarea::placeholder {
-  color: #FFFFFF;
-}
-.form-contact textarea:focus {
-  border-color: #1b2d37;
-  color: #1b2d37;
-  outline: none;
+
+  &:focus {
+    border: 1px solid $gray;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $white;
+  }
 }
 
 .form__submit {
   width: 270px;
-}
-.form__submit:hover {
+
+  &:hover {
   background-color: #FFFFFF;
   color: #00B2FF;
+ }
 }
+
 
 .form-contact input[id="data"] {
   right: 253px;

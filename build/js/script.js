@@ -1,5 +1,5 @@
 
-'use strict'
+'use strict';
 
 var ESC_KEYCODE = 27;
 var hideClass = 'visually-hidden';
@@ -86,4 +86,28 @@ textarea.addEventListener('input', function() {
   }
 });
 
+//скролл
 
+var anchors = [].slice.call(document.querySelectorAll('a[href*="#"]'));
+var animationTime = 600;
+var framesCount = 60;
+
+
+anchors.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    var coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+
+    var scroller = setInterval(function () {
+      var scrollBy = coordY / framesCount;
+
+      if (scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
+        window.scrollBy(0, scrollBy);
+      } else {
+        window.scrollTo(0, coordY);
+        clearInterval(scroller);
+      }
+    }, animationTime / framesCount);
+  });
+});
