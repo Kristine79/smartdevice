@@ -1,31 +1,15 @@
-'use strict';
-
-var checkboxpop = document.getElementById('pop-data');
-
-checkboxpop.addEventListener('change', e => {
-
-    if(e.target.checked){
-        popupForm.classList.remove('contact-error');
-    } else {
-
-    alert ('Поставьте галку, если вы согласны');
-
-    popupForm.classList.add('contact-error');
-    
-    }
-
-});
-
+var popup = document.querySelector('.form-container');
 var checkboxform = document.getElementById('data');
 
 checkboxform.addEventListener('change', e => {
 
-    if(e.target.checked){
-        popupForm.classList.remove('contact-error');
+    if (e.target.checked) {
+        popup.classList.remove('contact-error');
     } else {
 
-    alert ('Поставьте галку, если вы согласны');  
-    
+        alert('Поставьте галку, если вы согласны на обработку ваших персональных данных');
+        
+
     }
 
 });

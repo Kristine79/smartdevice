@@ -199,14 +199,14 @@
 /*для js */
 
 .error {
-  border: 4px solid #e74246;
+  border: 4px solid $gray;
 }
 
 
 .error.phone::placeholder,
 .error.name::placeholder,
 .error.message::placeholder {
-  color: #e74246;
+  color: $dark-blue;
   animation: shake .8s;
 }
 
@@ -262,3 +262,15 @@
     transform: translateX(10px);
   }
 }
+
+
+@keyframes pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+     }
+}
+
