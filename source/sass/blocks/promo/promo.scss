@@ -128,15 +128,17 @@
 
   .promo {
     margin-bottom: 50px;
-    min-width: 680px;
+    min-width: 766px;
     width: 88.54%;
+    overflow: hidden;
+    margin: 0 auto;
 
     &::after {
-      left: 355px;
+      left: 464px;
       top: 37px;
       width: 465px;
-      height: 340px;
-      background-size: contain;
+      height: 340px; 
+      background-size: 100% auto;    
     }
   }
 
@@ -144,20 +146,20 @@
     font-size: 60px;
     line-height: 70px;
     width: 100px;
-    padding-left: 110px;
+    padding-left: 87px;
   }
 
   .promo__slogan {
     font-size: 18px;
     line-height: 28px;
-    padding-left: 88px;
+    padding-left: 137px;
     width: 393px;
   }
 
   .promo__slogan::before {
-    bottom: 62%;
+    bottom: 58%;
     width: 33px;
-    left: 40px;
+    left: 89px;
   }
 
   .promo__scroll {

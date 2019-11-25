@@ -107,58 +107,58 @@ for (i = 0; i < acc.length; i++) {
 
 //Валидация формы
 
-var formContainer = document.querySelector('.form-container');
-var form = formContainer.querySelector('.contact-form');
-var inputName = formContainer.querySelector('.name');
-var textarea = formContainer.querySelector('.letter-text');
-var phone = formContainer.querySelector('.phone');
+//var formContainer = document.querySelector('.form-container');
+//var form = formContainer.querySelector('.contact-form');
+//var inputName = formContainer.querySelector('.name');
+//var textarea = formContainer.querySelector('.letter-text');
+//var phone = formContainer.querySelector('.phone');
 
 
-form.addEventListener('submit', function (evt) {
-  if (!inputName.value || !phone.value || !textarea.value) {
-    evt.preventDefault();
-    formContainer.classList.add('contact-error');
-  }
-  if (!inputName.value) {
-    inputName.classList.add('error');
-  }
-  if (!phone.value) {
-    phone.classList.add('error');
-  }
-  if (!textarea.value) {
-    textarea.classList.add('error');
-  }
+//form.addEventListener('submit', function (evt) {
+  //if (!inputName.value || !phone.value || !textarea.value) {
+    //evt.preventDefault();
+    //formContainer.classList.add('contact-error');
+  //}
+  //if (!inputName.value) {
+    //inputName.classList.add('error');
+  //}
+  //if (!phone.value) {
+    //phone.classList.add('error');
+  //}
+  //if (!textarea.value) {
+    //textarea.classList.add('error');
+  //}
 
-});
+//});
 
 
 
-inputName.addEventListener('input', function () {
-  if (!inputName.value) {
-    inputName.classList.add('error');
-  }
-  else {
-    inputName.classList.remove('error');
-  }
-});
+//inputName.addEventListener('input', function () {
+  //if (!inputName.value) {
+    //inputName.classList.add('error');
+  //}
+  //else {
+    //inputName.classList.remove('error');
+  //}
+//});
 
-phone.addEventListener('input', function () {
-  if (!phone.value) {
-    phone.classList.add('error');
-  }
-  else {
-    phone.classList.remove('error');
-  }
-});
+//phone.addEventListener('input', function () {
+  //if (!phone.value) {
+    //phone.classList.add('error');
+  //}
+  //else {
+    //phone.classList.remove('error');
+  //}
+//});
 
-textarea.addEventListener('input', function () {
-  if (!textarea.value) {
-    textarea.classList.add('error');
-  }
-  else {
-    textarea.classList.remove('error');
-  }
-});
+//textarea.addEventListener('input', function () {
+  //if (!textarea.value) {
+    //textarea.classList.add('error');
+  //}
+  //else {
+    //textarea.classList.remove('error');
+  //}
+//});
 
   
 

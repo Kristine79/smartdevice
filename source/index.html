@@ -71,21 +71,16 @@
       </div>
     </header>
 
-
-
-
     <section class="promo">
       <div class="promo__text">
-        <h2 class="promo__header ">Печатные платы</h2>
+        <h1 class="promo__header">Печатные платы</h1>
         <p class="promo__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</p>       
         <a class="button promo__btn" href="#form">
           <span class="promo__btn-desktop">Получить бесплатную консультацию</span>
           <span class="promo__btn-mobile">Бесплатная консультация</span>
         </a>
         <a href="#advantages" class="promo__scroll">Скролл вниз</a>    
-      </div>
-
-     
+      </div>     
     </section>
   </div>
 
@@ -192,33 +187,34 @@
       </div>
 
       <div class="form-wrapper" id="form">
-        <section class="form-container">
+        <section class="contact-container">
           <div class="contact-wraper">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
 
             <form class="contact-form">
+              <p class="contact-item">
+                <label for="name" class="visually-hidden">Введите свое имя</label>
+                <input class="contact-input name" name="name" id="name" type="text" placeholder="Имя">
+              </p>
+              <p class="contact-item">
+                <label for="phone" class="visually-hidden">Введите номер своего телефона</label>
+                <input class="contact-input phone" name="phone" id="phone" type="tel" placeholder="Телефон"
+                  pattern="^((\+7)+([0-9]){10})$" title="Введите телефонный номер в формате +7ХХХХХXХХХХ">
+              </p>
+              <p class="contact-item">
+                <label for="contact-text" class="visually-hidden">Текст письма:</label>
+                <textarea class="contact-input contact-text" id="letter-text" rows="5" cols="92" name="text"
+                  placeholder="В свободной форме"></textarea>
+              </p>
 
-                <p class="contact-item" >
-                    <label for="name" class="visually-hidden">Введите свое имя</label>
-                    <input class="contact-input name" name="name" id="name" type="text" placeholder="Имя">
-                  </p>
-                  <p class="contact-item">
-                      <label for="phone" class="visually-hidden">Введите номер своего телефона</label>
-                      <input class="contact-input phone" name="phone" id="phone" type="tel" placeholder="Телефон" pattern="^((\+7)+([0-9]){10})$"   title="Введите телефонный номер в формате +7ХХХХХXХХХХ" >
-  
-                  </p>
-                  <p class="contact-item"  class="visually-hidden">
-                    <label for="letter-text">Текст письма:</label>
-                    <textarea class="contact-input letter-text" id="letter-text" rows="5" cols="92" name="text" placeholder="В свободной форме"></textarea>
-                  </p>                 
+              <button class="button contact-submit" type="submit">Задать вопрос</button>
 
-              <button class="button form__submit" type="submit">Задать вопрос</button>
-                            
-              <input name="data"  onclick="checkPolicy()"  id="data" type="checkbox" class="visually-hidden" checked required>
-              <label class="checkboxjs" for="data">Я согласен на обработку персональных данных</label>       
-           
-              
+              <input name="data" onclick="checkPolicy()" id="data" type="checkbox" class="visually-hidden" checked
+                required>
+              <label class="checkboxjs" for="data">Я согласен на обработку персональных данных</label>
+
+
 
             </form>
           </div>
@@ -344,9 +340,6 @@
         </div>
         
 <script src="js/script.js"></script>
-<script src="js/checkPolicy.js"></script>
-
-<!--<script src="js/checkbox.js"></script>-->
 <script src="https://unpkg.com/imask"></script>
 
   </body>
