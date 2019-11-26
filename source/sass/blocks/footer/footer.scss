@@ -1,7 +1,7 @@
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 1140px;
   margin: 0 auto;
 }
 
@@ -9,6 +9,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+
 }
 
 .footer::after {
@@ -102,6 +105,10 @@
   display: flex;
   justify-content: space-between;
   width: 340px;
+}
+
+.footer-address__blocks {
+  
 }
 
 .footer-copyright {

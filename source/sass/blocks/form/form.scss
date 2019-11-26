@@ -53,7 +53,12 @@
   
   &:focus {
     border: 1px solid $gray;
+    color: $gray;
     outline: none;  
+  }
+
+  &:hover {   
+    border: 1px $white solid;
   }
 
 }
@@ -163,9 +168,6 @@
   display: block;
   animation: bounce .6s;
 }
-
-
-
 
 .contact-submit {
   width: 270px;
