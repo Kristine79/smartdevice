@@ -1,11 +1,9 @@
 .header {
   display: flex;
-  min-width: 1000px;
   margin: 0 auto;
-  max-width: 1500px;
-  padding-top: 50px;
+  max-width: 1470px; 
   margin-bottom: 180px;
-  padding-left: 20px;
+  padding-left: 36px;
   padding-right: 20px;
 }
 
@@ -16,7 +14,7 @@
 }
 
 .header__img {
-  margin-right: 16px;
+  margin-right: 17px;
 }
 
 .header__name {
@@ -42,14 +40,13 @@
   display: flex;
 }
 .header__text-smoke ul li {
+  font-family: $font-roboto;
   list-style: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: "Cuprum Bold";
-  font-size: 20px;
-
-
+  color: $white;
+  font-size: 25px;
+  line-height: 29px;  
 }
+
 .header__text-smoke ul:hover li {
   animation: animate 2s linear forwards;
 }
@@ -98,6 +95,7 @@
   margin-left: auto;
   min-width: 650px;
   align-items: baseline;
+  width: 46.8%;
 
   a:hover {
     color: $white;

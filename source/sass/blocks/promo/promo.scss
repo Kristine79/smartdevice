@@ -2,16 +2,15 @@
   display: flex;  
   margin: 0 auto;
   position: relative;
-  margin-bottom: 109px; 
-  min-width: 1007px;
+  margin-bottom: 109px;   
   width: 81.56%;
-  max-width: 1600px;
+  max-width: 1470px;
 
   &::after {
     position: absolute;
     content: "";
-    right: 0;
-    top: -26px;
+    right: -56px;
+    top: -13px;
     width: 705px;
     height: 515px;
     background-image: url('../img/eboards.png');
@@ -24,6 +23,9 @@
   flex-direction: column;
   position: relative;  
   z-index: 1;
+  margin-left: 2.2%;
+  margin-bottom: 90px;
+  padding-top: 46px;
 }
 
 .promo__header {
@@ -32,12 +34,12 @@
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $white;
   margin: 0;
   margin-bottom: 28px;
-  width: 815px;
+  width: 718px;
 }
 
 .promo__slogan {
@@ -49,14 +51,14 @@
   color: $white;
   padding-left: 96px;
   margin: 0;
-  width: 680px;
-  margin-bottom: 37px;
+  width: 718px;
+  margin-bottom: 44px;
 
   &::before {
     position: absolute;
     content: "";
-    bottom: 72%;
-    left: 2px;
+    bottom: 64%;
+    left: 3px;
     width: 66px;
     height: 2px;
     background-color: $white;
@@ -92,8 +94,8 @@
 
 .promo__scroll {
   position: relative;
-  bottom: 80px;
-  right: 40px;
+  bottom: 0;
+  right: 3px;
   z-index: 9999;
   font-family: $font-mono;
   font-size: 14px;
@@ -128,8 +130,7 @@
 @media (max-width: $tablet) {
 
   .promo {
-    margin-bottom: 50px;
-    min-width: 766px;
+    margin-bottom: 50px;   
     width: 88.54%;
     overflow: hidden;
     margin: 0 auto;

@@ -1,7 +1,9 @@
 .about {
   display: flex;
   flex-direction: column;
-  width: 1170px;
+  max-width: 1500px;
+  width: 64%;
+  min-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -38,7 +40,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  width: 867px;
+  width: 970px;
   margin: 0;
   margin-bottom: 23px;
 }

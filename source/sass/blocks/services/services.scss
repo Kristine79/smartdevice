@@ -1,14 +1,16 @@
 .services {
-  width: 1110px;
+  width: 1170px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 93px;
-  padding-bottom: 40px;
+  padding-top: 109px;
+  padding-bottom: 98px;
 }
 
 .services__list {
   display: flex;  
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .services-bg {
@@ -43,12 +45,11 @@
   margin-bottom: 30px;
   width: 370px;
   min-height: 620px;
-  padding-right: 50px;
 
   &::after {
     position: absolute;
     content: "";
-    right: 50px;
+    right: -8px;
     bottom: 0;
     width: 63px;
     height: 63px;
