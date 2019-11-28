@@ -96,9 +96,13 @@
     min-width: 720px;
   }
 
-  .advantages__item {
-    min-width: 345px;
-    width: 47.92%;
+  .advantages__text {
+    width: 297px;      
+  }
+
+  .advantages-item {
+    width: 345px;
+   
     min-height: 232px;
   }
 
@@ -123,7 +127,7 @@
   }
 }
 
-//
+
 @media (max-width: $mobile) {
   .advantages {
     margin-bottom: 28px;

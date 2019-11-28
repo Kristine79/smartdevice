@@ -6,6 +6,20 @@
   background-color: $darkbg;
 }
 
+
+@media (max-width: $tablet) {
+
+  .mainscreen-bg {
+    padding-top: 19px;
+    background: url("../img/header_background.png") center top no-repeat,
+      url("../img/two_rectangles.png") center -130px  no-repeat;
+    background-size: auto, cover;
+    background-color: $darkbg;
+  }
+
+}
+
+
 @media (max-width: $mobile) {
 
   .mainscreen-bg {

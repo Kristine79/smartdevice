@@ -1,12 +1,11 @@
 .form-wrapper {
   background-color: $blue;
-  padding-bottom: 100px;
+  padding-bottom: 62px;
   background: url("../img/tworectanglesform.png") 15% 52% no-repeat,
     url("../img/leftrectangleform-small.png") 95% 17% no-repeat,
     url("../img/rightrectangleform-big.png") right 60% no-repeat;
   background-size: auto, auto, auto, auto;
   background-color: $blue;
-  margin-bottom: 65px;
 }
 
 .contact-container {
@@ -324,4 +323,26 @@
 @keyframes pulsate {
   50% {color:#fff;text-shadow:0 -1px rgba(0,0,0,.3),0 0 5px $gray,0 0 8px $dark-blue;
   }
+  
+
+}
+
+
+@media (max-width: $tablet) {
+  .contact-container {
+  
+  }
+  
+  .contact-container:before {
+    display: none;
+  }
+
+  .contact-wraper {
+    width: 770px;
+    padding-top: 83px;
+    margin: 0 auto;
+  }
+
+  
+
 }

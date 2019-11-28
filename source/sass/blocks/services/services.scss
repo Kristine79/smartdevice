@@ -3,7 +3,7 @@
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 109px;
+  padding-top: 87px;
   padding-bottom: 98px;
 }
 
@@ -25,7 +25,7 @@
   line-height: 51px;
   color: $white;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 54px;
 }
 
 .services__header {
@@ -39,6 +39,8 @@
   width: 170px;
   margin-left: 44px;
 }
+
+
 
 .services__item {
   position: relative;
@@ -84,8 +86,10 @@
 
 @media (max-width: $tablet) {
 
-  .services {
-    padding-top: 50px;
+  .services {   
+      padding-top: 23px;
+      min-width: 720px;
+      width: 93.75%;
   }
 
   .services__list {
@@ -100,9 +104,23 @@
   }
 
   .services__item {
-    width: 715px;
-    height: 256px;
-  }
+    margin-right: 0;
+    margin-bottom: 46px;
+    padding-bottom: 0;
+    width: 100%;
+    min-height: 256px;
+ }
+
+ .services__item a {
+  padding-top: 270px;
+  overflow: hidden;
+ }
+
+ .services__item img {
+  top: -50%;
+  margin-top: -50%;
+  height: auto;
+}
 
 }
 

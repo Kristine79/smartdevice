@@ -70,14 +70,47 @@
 
 @media (max-width: $tablet) {
   .about {
-    margin-bottom: 91px;
+    min-width: 720px;
+    width: 93.75%;
+
+    &::before {
+      top: 5px;
+      left: -30px;
+      width: 251px;
+      height: 362px;
+    }
+  }
+
+  .about__wrapper {
+    margin-left: 184px;
   }
 
   .about__text {
-    width: 532px;
+    margin-left: 185px;
+    min-width: 532px;
+    width: 73.9%;
+    margin-left: 3px;
+    margin-bottom: 20px;
   }
 
+  .about__header {
+    font-size: 32px;
+    line-height: 45px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+  } 
+
+  .about__text-hidden {
+    display: none;
+  }
+
+  .about__button {
+    margin-top: 22px;
+    margin-left: 3px;
+  }
 }
+
+
 
 @media (max-width: $mobile) {
 

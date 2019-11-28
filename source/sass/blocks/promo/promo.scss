@@ -95,7 +95,7 @@
 .promo__scroll {
   position: relative;
   bottom: 0;
-  right: 3px;
+  right: -3px;
   z-index: 9999;
   font-family: $font-mono;
   font-size: 14px;
@@ -131,13 +131,13 @@
 
   .promo {
     margin-bottom: 50px;   
-    width: 88.54%;
+    width: 100%;
     overflow: hidden;
     margin: 0 auto;
 
     &::after {
-      left: 464px;
-      top: 37px;
+      left: 523px;
+      top: 0;
       width: 465px;
       height: 340px; 
       background-size: 100% auto;    
@@ -154,14 +154,16 @@
   .promo__slogan {
     font-size: 18px;
     line-height: 28px;
-    padding-left: 137px;
-    width: 393px;
+    margin-left: 139px;
+    width: 356px;
+    padding-left: 0;
+    margin-bottom: 60px;
   }
 
   .promo__slogan::before {
-    bottom: 58%;
+    bottom: 48%;
     width: 33px;
-    left: 89px;
+    left: 91px;
   }
 
   .promo__scroll {
@@ -170,6 +172,16 @@
 
   .promo__btn-mobile {
     display: none;
+  }
+
+  .promo__text {
+    margin-left: 0;
+    padding-top: 62px;
+  }
+
+  .promo__btn {
+    width: 379px;
+    margin-left: 139px;
   }
 }
 
