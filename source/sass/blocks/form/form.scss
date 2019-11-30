@@ -74,7 +74,7 @@
   padding-left: 16px;
   padding-top: 13px;
   width: 100%;
-  min-height: 154px;
+  height: 154px;
   border-radius: 0;
 
   &::placeholder {
@@ -323,26 +323,66 @@
 @keyframes pulsate {
   50% {color:#fff;text-shadow:0 -1px rgba(0,0,0,.3),0 0 5px $gray,0 0 8px $dark-blue;
   }
-  
-
 }
-
 
 @media (max-width: $tablet) {
   .contact-container {
-  
+    max-width: 768px;
+    min-width: 500px;  
   }
   
   .contact-container:before {
     display: none;
   }
 
-  .contact-wraper {
-    width: 770px;
+  .contact-wraper {   
     padding-top: 83px;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 95px;
+    width:600px;
+  } 
+}
+
+
+@media (max-width: $mobile) {
+
+  .form-wrapper {
+    padding-bottom: 41px;
+  }
+  
+  .contact-container {
+    max-width: 320px;
+    min-width: 250px;  
+  }
+  
+  .contact-container:before {
+    display: none;
   }
 
-  
+  .contact-wraper {   
+    padding-top: 33px;
+    margin: 0;
+    margin-left: 15px;
+    width: 320px;   
+  } 
 
+  .contact-wraper h2 {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: normal;
+  }
+
+  .contact-wraper p {
+    width: 269px;
+    margin-bottom: 40px;
+   }
+
+   .contact-form textarea {
+     height: 104px;
+   }
+
+   .contact-submit {
+     margin-bottom: 30px;
+   }
 }
+

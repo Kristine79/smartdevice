@@ -245,6 +245,24 @@
 }
 
 @media (max-width: $mobile) {
+
+  .footer {
+    padding-top: 52px;
+  }
+
+  .footer-menu {
+    width: 78%;
+  }
+
+  .footer-menu__header {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .footer-top {
+    margin-bottom: 23px;
+  }
+
   .footer-social {
     display: flex;
     flex-direction: column;
@@ -257,8 +275,18 @@
   }
 
   .footer__year {
+    font-family: $font-mono;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
     margin: 0 auto;
     margin-bottom: 32px;
+    color: $dark-blue;
+    text-transform: uppercase;
+  }
+
+  .footer-copyright {
+    min-width: 320px;
   }
 
   .footer-copyright ul {
@@ -268,8 +296,13 @@
     align-items: center;
   }
 
-  .footer-copyright__item--hidden {
-    display: none;
+  .footer-copyright__item--nda {
+    width: 68%;
+  }
+
+  .footer-copyright__item--developed {  
+    margin: 0 auto;
+
   }
 
   .footer-copyright__item {

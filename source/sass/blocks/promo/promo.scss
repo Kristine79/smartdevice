@@ -190,17 +190,23 @@
   .promo {
     margin: 0 auto;
     flex-direction: column-reverse;
-    padding-top: 34px;
+    padding-top: 0px;
     min-width: 320px;
     width: 100%;
     max-width: 400px;
+    margin-bottom: 50px;  
 
     &::after {
       left: 27px;
-      top: -160px;
+      top: 12px;
       width: 301px;
       height: 220px;
     }
+  }
+
+  .promo__text {
+    padding-top: 208px;
+    margin-bottom: 50px;
   }
   
   .promo__header {
@@ -213,11 +219,12 @@
   .promo__slogan {
     font-size: 16px;
     line-height: 25px;
-    padding-left: 76px;
-    width: 271px;
-
+    margin-left:60px;
+    width: 245px;
+    margin-bottom: 42px;
+    
     &:before {
-      bottom: 74%;
+      bottom: 24%;
       width: 33px;
       left: 20px;
     }

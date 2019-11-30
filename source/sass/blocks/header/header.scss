@@ -213,8 +213,9 @@
 @media (max-width: $mobile) {
 
   .header {
-    padding-top: 30px;
-    min-width: 320px;
+   padding-left: 0;
+   min-width: 300px;
+   margin: 0; 
   }
 
   .header__contacts {
@@ -229,9 +230,10 @@
     margin-left: auto;  
 
     &::before {
-      left: -15px;
+      left: 37px;
       width: 25px;
      height: 19px;
+     top: -13px;
     }
   }
 
@@ -240,9 +242,10 @@
     min-width: 24px; 
 
     &::before {
-     left: -170px;
+     left: -24px;
      width: 24px;
      height: 24px;
+     top: -16px;
    }
   }
 
