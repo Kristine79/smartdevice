@@ -16,7 +16,8 @@
   justify-content: space-between;
   padding-top: 0px;
   min-width: 970px;
-  max-width: 1470px;
+  width: 63.54%;
+  max-width: 1500px;
 
 
   &::before {
@@ -327,8 +328,9 @@
 
 @media (max-width: $tablet) {
   .contact-container {
-    max-width: 768px;
-    min-width: 500px;  
+    min-width: 591px;
+    width: 76.95%;
+    max-width: 750px;
   }
   
   .contact-container:before {
@@ -337,8 +339,7 @@
 
   .contact-wraper {   
     padding-top: 83px;
-    margin: 0;
-    margin-left: 95px;
+    margin: 0;  
     width:600px;
   } 
 }
@@ -347,12 +348,14 @@
 @media (max-width: $mobile) {
 
   .form-wrapper {
+    min-width: 290px;
     padding-bottom: 41px;
   }
   
   .contact-container {
-    max-width: 320px;
-    min-width: 250px;  
+    min-width: 290px;
+    width: 90.64%;
+    max-width: 550px;
   }
   
   .contact-container:before {

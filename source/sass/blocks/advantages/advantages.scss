@@ -1,8 +1,8 @@
 .advantages {
-  margin: 0 auto;
-  position: relative;
-  max-width: 1470px;
-  width: 61%;
+  margin: 0 auto; 
+  min-width: 1000px;
+  width: 60.94%;
+  max-width: 1500px;
   margin-bottom: 75px;
 }
 
@@ -14,19 +14,16 @@
 }
 
 .advantages-item {
-  font-family: $font-mono;
-  font-style: normal;
-  font-weight: normal;
+  font-family: $font-mono; 
   font-size: 16px;
   line-height: 22px;
   min-width: 485px;
-  width: 102%; 
+  width: 48.72%;
   margin-bottom: 31px;
   color: $light-gray;
   position: relative;
   border: 1px solid $gray-border;
-  background-color: #FFFFFF;
-  margin-right: -11px;
+  background-color: #FFFFFF; 
   min-height: 299px;
 
   &::before {
@@ -40,12 +37,18 @@
   }
 }
 
+.advantages__item-block {
+  height: 100%;
+}
+
+
 .advantages-item__link {
   display: block;
-  text-decoration: none;
- 
+  text-decoration: none; 
   width: 100%;
-  padding: 40px 42px 44px 43px;
+  padding-left: 43px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   height: 100%;
 }
 
@@ -93,23 +96,21 @@
 @media (max-width: $tablet) {
   .advantages {
     margin-bottom: 20px;
-    width: 97%;
+    width: 93.75%;
     min-width: 720px;
   }
 
   .advantages-item__link {
-    padding: 27px 20px 25px 27px;
-
+    padding-bottom: 3px;
+    padding-left: 28px;
+    padding-top: 25px;
   }
 
-  .advantages__text {
-    width: 297px;      
-  }
-
+ 
   .advantages-item {
-   min-width: 345px;
-   
-    min-height: 386px;
+    min-width: 345px;
+    width: 47.92%;
+    min-height: 232px;
   }
 
   .advantages__item {
@@ -120,6 +121,7 @@
 
   .advantages-item__link svg {
     margin-bottom: 2px;
+    width: 93%;
   }
 
 
@@ -130,6 +132,7 @@
 
   .advantages-item__link p {
     margin-top: 0;
+    width: 93%;
   }
 }
 
@@ -138,13 +141,14 @@
   .advantages {
     margin-bottom: 28px;
     width: 90.63%;
-    min-width: 293px;
+    min-width: 293px;    
   }
 
   .advantages-item {
     margin-bottom: 20px;   
+    width: 100%;
     min-width: 290px;
-    min-height: 311px;
+    min-height: 200px;
   }
 
   .advantages__text {

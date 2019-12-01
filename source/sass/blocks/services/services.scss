@@ -45,7 +45,10 @@
 .services__item {
   position: relative;
   margin-bottom: 30px;
-  width: 370px;
+  margin-right: 2.43%;
+  margin-bottom: 30px;
+  min-width: 200px;
+  width: 30.83%;
   min-height: 620px;
 
   &::after {
@@ -74,6 +77,11 @@
   }
 }
 
+.services__item picture {
+  position: static;
+}
+
+
 .services__item img {
   position: absolute;
   content: "";
@@ -87,20 +95,21 @@
 @media (max-width: $tablet) {
 
   .services {   
-      padding-top: 23px;
-      min-width: 720px;
-      width: 93.75%;
-  }
+    padding-top: 23px;
+    min-width: 720px;
+    width: 93.75%;
+  }  
 
   .services__list {
-    flex-direction: column;
+    padding-left: 0;
   }
+
 
   .services__title {
     font-size: 32px;
     line-height: 45px;
-    width: 713px;
-    line-height: 45px;
+    margin-left: 0;
+    width: 615px;  
   }
 
   .services__item {
