@@ -82,7 +82,7 @@
 
 .footer-name__slogan,
 .footer-name__text {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -114,14 +114,13 @@
 
 .footer-address__header,
 .footer-menu__header {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 16px;
     text-transform: uppercase;
     color: #1b2d37;
-    margin: 0 auto 29px;
-    letter-spacing: -.05em;
+    margin: 0 auto 29px;    
     font-weight: 300
 }
 
@@ -177,11 +176,11 @@
 }
 
 .footer-copyright__item--year {
-    width: 26.56%
+    width: 16.56%
 }
 
 .footer-copyright__item--nda {
-    width: 23.98%
+    width: 34.98%
 }
 
 .footer-copyright__item--developed:hover,
@@ -240,7 +239,7 @@
         display: none
     }
     .footer-copyright__item--nda {
-        width: 40%
+        width: 31%
     }
     .footer-copyright__item--reserved {
         display: none
@@ -327,17 +326,20 @@
         padding-top: 17px
     }
     .footer-top {
-        margin-bottom: 50px
+        margin-bottom: 58px
     }
     .footer__wrapper {
         width: 100%;
         padding: 0 25px
     }
     .footer__year {
+        font-family: "PT Mono", "Arial", sans-serif;
         display: block;
-        margin-top: 22px;
-        font-size: 14px;
-        margin-left: 28px;
+        color: $dark-blue;
+        margin-top: 20px;
+        margin-left: 12px;
+        font-size: 13px;
+        line-height: 24px;        
         letter-spacing: .4px;
         text-transform: uppercase
     }
@@ -356,8 +358,9 @@
     .footer-address__header,
     .footer-menu__header {
         font-weight: 500;
-        font-size: 16px;
-        letter-spacing: -.07em
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0.05em
     }
     .footer-address__blocks,
     .footer-menu__blocks {
@@ -388,8 +391,8 @@
         margin: 0 0 5px -24px
     }
     .footer__year {
-        font-size: 13px!important;
-        display: grid!important;
+        font-size: 13px;
+        display: grid;
         width: 100%;
         text-align: center;
         margin: 22px 0 20px
@@ -414,7 +417,7 @@
 
 @media (max-width:322px) {
     .footer-social__logo {
-        margin: 3px 0 5px -12px
+        margin: 0 0 5px -1px
     }
     .footer-name {
         margin-top: 7px
@@ -428,7 +431,8 @@
     .footer-address__header,
     .footer-menu__header {
         font-size: 15px;
-        letter-spacing: -.04em
+        line-height: 16px;
+        letter-spacing: 0.05em;
     }
     .toggle-text {
         padding: 0 15px;
@@ -436,7 +440,7 @@
     }
     .footer-copyright__item--nda {
         width: 100%;
-        text-align: center
+        text-align: center;
     }
 
 	.footer-menu__header {

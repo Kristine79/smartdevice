@@ -1,3 +1,5 @@
+
+
 .form-wrapper {
   padding-bottom: 62px;
   background: url(../img/tworectanglesform.png) 15% 52% no-repeat, url(../img/leftrectangleform-small.png) 95% 17% no-repeat, url(../img/rightrectangleform-big.png) right 60% no-repeat;
@@ -170,8 +172,7 @@
 }
 
 .contact-wraper>h2 {
-  line-height: 42px;
-  letter-spacing: -1.2px;
+  line-height: 42px;  
   margin-bottom: 15px;
   font-weight: 300;
   padding-right: 5%;
@@ -183,15 +184,14 @@
 
 .contact-submit,
 .contact-wraper h2 {
-  font-family: "Roboto Condensed", "Arial", sans-serif
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .contact-wraper h2 {
   margin-top: -3px;
   margin-bottom: 11px;
   font-size: 36px;
-  line-height: 51px;
-  letter-spacing: -2.15px;
+  line-height: 51px;  
 }
 
 .contact-wraper p {
@@ -319,9 +319,8 @@
       display: flex;
       width: 100%
   }
-  .contact-wraper>h2 {
-      letter-spacing: .8px!important;
-      font-size: 27px;
+  .contact-wraper>h2 {      
+      font-size: 32px;
       margin-top: -6px
   }
   .contact-wraper>p {
@@ -351,8 +350,7 @@
   .form-wrapper {
       padding-bottom: 42px
   }
-  .contact-wraper>h2 {
-      letter-spacing: .2px;
+  .contact-wraper>h2 {      
       font-size: 28px;
       margin-top: -5px;
       line-height: 40px
@@ -428,10 +426,9 @@
 	}
 
 	.contact-wraper>h2 {
-    font-family: $font-roboto;
+    font-family: 'Roboto Condensed', sans-serif;
 		margin-top: -2px;
-		margin-left: 7px;
-		letter-spacing: -0.2px!important;
+		margin-left: 7px;		
 	}
 
 	.contact-wraper>p {
@@ -439,7 +436,7 @@
 	}
 
 	.contact-wraper p {
-		margin-bottom: 32px;
+		
 	}
 
 	.contact-submit {

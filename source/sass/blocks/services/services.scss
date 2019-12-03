@@ -1,3 +1,5 @@
+@import url(http://allfont.ru/allfont.css?fonts=roboto-condensed);
+
 .services {
   width: 100%;
   max-width: 1186px;
@@ -24,14 +26,13 @@
 
 .services__header,
 .services__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
   color: #fff
 }
 
-.services__title {
-  letter-spacing: -2px;
+.services__title { 
   font-size: 36px;
   line-height: 51px;
   margin: 0 0 52px 13px;
@@ -41,8 +42,7 @@
   font-size: 20px;
   line-height: 30px;
   width: 170px;
-  margin: 0 0 0 43px;
-  letter-spacing: -0.8px;
+  margin: 0 0 0 43px;  
 }
 
 .services__item {
@@ -120,8 +120,7 @@
   .services__title {
       font-size: 32px;
       line-height: 45px;
-      width: 629px;
-      letter-spacing: -1.9px;
+      width: 629px;      
       margin: 0 0 48px;
   }
   .services__item {
@@ -222,7 +221,7 @@
   .services__title {
     margin: 0 9px 42px;  
   }
-.services__header{
+.services__header {
   margin: 20px 0 0 31px;
   letter-spacing: 0;
   width: 173px;

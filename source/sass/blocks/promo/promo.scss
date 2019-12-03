@@ -31,24 +31,19 @@
     z-index: 1;
     margin-left: 2.2%;
     margin-bottom: 90px;
-    padding-top: 46px
-}
-
-.promo__header,
-.promo__slogan {
-    font-style: normal;
-    color: #fff;
-    width: 718px
+    padding-top: 46px;
 }
 
 .promo__header {
     letter-spacing: .07em;
     text-transform: uppercase;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-family: 'Roboto Condensed', arial;
     font-weight: 700;
     font-size: 80px;
     line-height: 94px;
-    margin: 0 0 28px
+    margin: 0 0 28px;
+    width: 811px;
+    color: $white;
 }
 
 .promo__slogan {
@@ -57,7 +52,9 @@
     font-size: 22px;
     line-height: 34px;
     padding-left: 96px;
-    margin: 0 0 44px
+    margin: 0 0 44px;
+    width: 705px;
+    color: $white;
 }
 
 .promo__slogan::before {
@@ -240,16 +237,10 @@
         background-color: #788891
     }
     .promo__btn-desktop {
-        display: none;
+        display: none
     }
     .promo__btn-mobile {
-        font-family: $font-roboto;
-      display: block;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 19px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+        display: block
     }
 }
 
@@ -313,5 +304,5 @@
     .promo__slogan:before {
         bottom: 42.5%
     }
-    
 }
+
