@@ -443,3 +443,9 @@
 		margin-bottom: 23px;
 	}
 }
+
+@media (max-width:1600px) {
+  .contact-container::before {
+    left: -168px;
+  }
+}

@@ -54,7 +54,7 @@
   .toggle-text {
     padding: 0 18px;
     color: #212121;
-    background-color: #fff;
+    background-color: $toggles;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -80,7 +80,7 @@
   .toggle-section span:before {
     content: '';
     position: absolute;
-    background-color: #fff;
+    background-color: $toggles;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

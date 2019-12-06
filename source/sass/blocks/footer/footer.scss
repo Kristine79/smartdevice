@@ -451,3 +451,9 @@
 		margin-top: 15px;
 	}
 }
+
+@media (max-width:1600px) {
+    .footer-copyright__item--year {
+        width: 21.56%;   
+    }
+  }

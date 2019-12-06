@@ -306,3 +306,9 @@
     }
 }
 
+@media (max-width:1600px) {
+  .promo::after {
+    right: -199px;
+  }
+}
+
