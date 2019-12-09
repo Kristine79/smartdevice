@@ -1,5 +1,3 @@
-
-
 .form-wrapper {
   padding-bottom: 62px;
   background: url(../img/tworectanglesform.png) 15% 52% no-repeat, url(../img/leftrectangleform-small.png) 95% 17% no-repeat, url(../img/rightrectangleform-big.png) right 60% no-repeat;
@@ -449,3 +447,10 @@
     left: -168px;
   }
 }
+
+@media (max-width:1800px) {
+  .contact-container {
+    width:80%;
+  }
+}
+
