@@ -2,7 +2,7 @@
   .toggle-section {
     cursor: pointer;
     padding: 16px;
-    width: 320px;
+    width: 100%;
     border: none;
     text-align: left;
     outline: none;
@@ -54,7 +54,7 @@
   .toggle-text {
     padding: 0 18px;
     color: #212121;
-    background-color: $toggles;
+   
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -100,3 +100,7 @@
     display: none;
   }
 }
+
+
+
+

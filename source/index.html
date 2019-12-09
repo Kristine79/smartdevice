@@ -215,8 +215,8 @@
               </p>
               <p class="contact-item">
                 <label for="phone" class="visually-hidden">Введите номер своего телефона</label>
-                <input class="contact-input phone" name="phone" id="phone" type="tel" placeholder="Телефон"
-                  pattern="^((\+7)+([0-9]){10})$" title="Введите телефонный номер в формате +7ХХХХХXХХХХ">
+                <input class="contact-input phone phone-mask" name="phone" id="phone" type="tel" placeholder="Телефон"
+                   title="Введите телефонный номер в формате +7ХХХХХXХХХХ">
               </p>
               <p class="contact-item">
                 <label for="contact-text" class="visually-hidden">Текст письма:</label>
@@ -346,7 +346,7 @@
                 </p>
                 <p>
                   <label for="pop-phone" class="visually-hidden">Введите номер своего телефона</label>
-                  <input class="phone" name="phone" id="pop-phone" type="tel" pattern="^((\+7)+([0-9]){10})$"
+                  <input class="phone phone-mask" name="phone" id="pop-phone" type="tel"
                     placeholder="Телефон" title="Введите телефонный номер в формате +7ХХХХХXХХХХ" required>
                 </p>
 
@@ -365,7 +365,7 @@
         </div>
         
 <script src="js/script.js"></script>
-<script src="https://unpkg.com/imask"></script>
+<script src="js/imask/imask.js"></script>
 
   </body>
 </html>

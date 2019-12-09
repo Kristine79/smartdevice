@@ -278,18 +278,41 @@
     }
 }
 
-@media (max-width:422px) {
+@media (max-width:475px) {
     .promo__header {
-        margin-left: 15px
+        margin-left: 35px
     }
     .promo__slogan {
-        margin-left: 67px
+        margin-left: 97px
     }
     .promo__slogan:before {
-        left: 18px
+        left: 38px
+    }
+    .promo__btn {
+        margin-left: 37px
+    }
+
+    .promo::after {
+        left: 68px;
+    }
+}
+
+@media (max-width:422px) {
+    .promo__header {
+        margin-left: 35px
+    }
+    .promo__slogan {
+        margin-left: 77px
+    }
+    .promo__slogan:before {
+        left: 38px
     }
     .promo__btn {
         margin-left: 17px
+    }
+
+    .promo::after {
+        left: 38px;
     }
 }
 
@@ -307,8 +330,13 @@
 }
 
 @media (max-width:1600px) {
+
+  .promo {
+    width: 90%;
+  }
+
   .promo::after {
-    right: -199px;
+    right: -90px;
   }
 }
 

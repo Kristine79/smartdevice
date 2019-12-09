@@ -33,7 +33,7 @@
         height: 22px;
         background-color: red;
         -webkit-transform: rotate(45deg);
-        transform: rotate(45deg)
+        transform: rotate(45deg);        
     }
     .toggle-section:before::after {
         height: 23px;
@@ -42,8 +42,7 @@
     }
     .toggle-text {
         padding: 0 18px;
-        color: #212121;
-        background-color: $toggles;
+        color: #212121;     
         max-height: 0;
         overflow: hidden;
         -webkit-transition: max-height .3s ease-out;
@@ -52,7 +51,7 @@
     }
     .toggle-section {
         position: relative;
-        border-top: 1px solid rgba(98, 105, 98, .2)
+        border-top: 1px solid rgba(98, 105, 98, .2);
     }
     .toggle-section span {
         position: absolute;

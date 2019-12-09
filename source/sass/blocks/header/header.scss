@@ -314,3 +314,21 @@ header,
         left: 32px;
     }
 }
+
+@media (max-width:375px) {
+    .header__phone::before{
+        left: 0px;
+    }
+    .header__email::before{
+        left: 52px;
+    }
+}
+
+@media (max-width:425px) {
+    .header__phone::before{
+        left: 0px;
+    }
+    .header__email::before{
+        left: 52px;
+    }
+}
