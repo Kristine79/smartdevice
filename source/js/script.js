@@ -164,9 +164,8 @@ for (i = 0; i < acc.length; i++) {
 
 //Маска телефона
 
-var phoneMask = IMask(
-  document.getElementById('phone-mask'), {
-    mask: '+{7}(000)000-00-00'
-  });
-
-
+var element = document.getElementById('pnone-mask');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+var mask = IMask(element, maskOptions);
